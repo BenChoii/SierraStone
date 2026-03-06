@@ -1,6 +1,6 @@
 // AI Visualizer API utility — Sierra Stone
 const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const API_KEY = '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';
+const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const MODEL = 'google/gemini-2.5-flash-image';
 
 /**
