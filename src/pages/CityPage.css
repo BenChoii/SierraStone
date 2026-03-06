@@ -1,0 +1,162 @@
+/* ===== CITY PAGE STYLES ===== */
+
+.city-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 3rem 0 3.5rem;
+    color: var(--cream);
+}
+
+.city-hero .breadcrumbs {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.city-hero .breadcrumbs a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.city-hero .breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.city-hero .breadcrumbs span {
+    margin: 0 0.35rem;
+}
+
+.city-hero h1 {
+    color: var(--cream);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.city-hero p {
+    color: var(--text-light);
+    max-width: 700px;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.city-hero__actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.section-intro {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Services Grid */
+.city-services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.city-service-card {
+    padding: 1.75rem;
+    background: white;
+    border: 1px solid var(--cream-dark);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-out);
+}
+
+.city-service-card:hover {
+    border-color: var(--coral);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.city-service-card h3 {
+    color: var(--navy);
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.city-service-card p {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.city-service-card__link {
+    color: var(--coral);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* Local Insight */
+.city-insight {
+    max-width: 750px;
+}
+
+.city-insight p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.city-neighborhoods h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.city-neighborhoods__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.city-neighborhood-tag {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background: white;
+    border: 1px solid var(--cream-dark);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+/* Testimonials */
+.city-testimonials {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 750px;
+}
+
+.city-testimonial {
+    padding: 1.5rem 2rem;
+    background: var(--cream);
+    border-left: 4px solid var(--coral);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin: 0;
+}
+
+.city-testimonial p {
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.city-testimonial footer {
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 0.88rem;
+}
+
+@media (max-width: 768px) {
+    .city-services__grid {
+        grid-template-columns: 1fr;
+    }
+}

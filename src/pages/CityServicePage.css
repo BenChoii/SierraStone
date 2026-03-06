@@ -1,0 +1,201 @@
+/* ===== CITY + SERVICE PAGE STYLES ===== */
+
+.cs-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 3rem 0 3.5rem;
+    color: var(--cream);
+}
+
+.cs-hero .breadcrumbs {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.cs-hero .breadcrumbs a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.cs-hero .breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.cs-hero .breadcrumbs span {
+    margin: 0 0.35rem;
+}
+
+.cs-hero h1 {
+    color: var(--cream);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    margin-bottom: 0.75rem;
+}
+
+.cs-hero p {
+    color: var(--text-light);
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.cs-hero__actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Intro */
+.cs-intro {
+    max-width: 750px;
+}
+
+.cs-intro__first {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.cs-intro p {
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+/* Warning Signs */
+.cs-warnings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.cs-warning {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    background: white;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--cream-dark);
+}
+
+.cs-warning span {
+    font-size: 0.88rem;
+    color: var(--text-primary);
+}
+
+/* Process */
+.cs-process {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    max-width: 700px;
+}
+
+.cs-process__step {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.cs-process__num {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--coral);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cs-process__step h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.cs-process__step p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Gallery */
+.cs-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cs-gallery__item {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.cs-gallery__item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* FAQ */
+.cs-faq {
+    max-width: 750px;
+    margin-top: 1rem;
+}
+
+.cs-faq__item {
+    border: 1px solid var(--cream-dark);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.cs-faq__item summary {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--navy);
+    cursor: pointer;
+    background: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cs-faq__item summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--coral);
+    transition: transform 0.2s ease;
+}
+
+.cs-faq__item[open] summary::after {
+    content: '−';
+}
+
+.cs-faq__item p {
+    padding: 0 1.25rem 1.25rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cs-warnings {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}

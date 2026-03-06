@@ -1,0 +1,119 @@
+/* ===== COLOURS PAGE ===== */
+.colours-hero {
+    padding: calc(var(--nav-height) + 4rem) 0 4rem;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    text-align: center;
+}
+
+.colours-hero h1 {
+    color: var(--cream);
+    margin-bottom: 1rem;
+}
+
+.colours-hero p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.colours-category {
+    padding: 3rem 0;
+}
+
+.colours-category:nth-child(even) {
+    background: var(--cream);
+}
+
+.colours-category__title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.colours-category__title h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.colours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.colour-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--duration-normal) var(--ease-out);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.colour-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.colour-card__image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.colour-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.colour-card:hover .colour-card__image img {
+    transform: scale(1.08);
+}
+
+.colour-card__swatch {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.colour-card__content {
+    padding: 1.25rem 1.5rem;
+}
+
+.colour-card__content h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+}
+
+.colour-card__content p {
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.colour-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--coral);
+    transition: gap var(--duration-fast) var(--ease-out);
+}
+
+.colour-card:hover .colour-card__cta {
+    gap: 0.65rem;
+}
+
+@media (max-width: 600px) {
+    .colours-grid {
+        grid-template-columns: 1fr;
+    }
+}

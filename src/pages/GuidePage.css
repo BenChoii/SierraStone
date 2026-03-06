@@ -1,0 +1,232 @@
+/* ===== GUIDE PAGE STYLES ===== */
+
+.guide-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 3rem 0 3.5rem;
+    color: var(--cream);
+}
+
+.guide-hero .breadcrumbs {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.guide-hero .breadcrumbs a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.guide-hero .breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.guide-hero .breadcrumbs span {
+    margin: 0 0.35rem;
+}
+
+.guide-hero__category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+}
+
+.guide-hero h1 {
+    color: var(--cream);
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    margin-bottom: 0.75rem;
+    max-width: 750px;
+}
+
+.guide-hero__meta {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Article */
+.guide-article {
+    max-width: 750px;
+}
+
+.guide-article__intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.guide-section {
+    margin-bottom: 2.5rem;
+}
+
+.guide-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.guide-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.guide-bullet {
+    display: block;
+    padding-left: 1.25rem;
+    position: relative;
+    margin-bottom: 0.35rem;
+}
+
+.guide-bullet::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--coral);
+    font-weight: bold;
+}
+
+/* Verdict */
+.guide-verdict {
+    background: var(--cream);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--coral);
+    margin-bottom: 2.5rem;
+}
+
+.guide-verdict h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.guide-verdict p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+/* FAQ in Guide */
+.guide-faq {
+    margin-bottom: 2.5rem;
+}
+
+.guide-faq h2 {
+    margin-bottom: 1rem;
+}
+
+/* Related Services */
+.guide-related {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--cream-dark);
+}
+
+.guide-related h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.guide-related__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.guide-related__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--cream);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    transition: all 0.2s ease;
+}
+
+.guide-related__link:hover {
+    background: var(--coral);
+    color: white;
+}
+
+/* Guides Hub */
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.guide-card {
+    padding: 1.75rem;
+    background: white;
+    border: 1px solid var(--cream-dark);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-out);
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-card:hover {
+    border-color: var(--coral);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.guide-card__category {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--cream);
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--coral);
+    margin-bottom: 0.75rem;
+    align-self: flex-start;
+}
+
+.guide-card h2 {
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+}
+
+.guide-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    flex: 1;
+}
+
+.guide-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--cream-dark);
+    font-size: 0.78rem;
+    color: var(--stone-grey);
+}
+
+.guide-card__link {
+    color: var(--coral);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .guides-grid {
+        grid-template-columns: 1fr;
+    }
+}
