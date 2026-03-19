@@ -6,22 +6,22 @@ const SERVICE_CARDS = [
     {
         title: 'Pool Decks',
         desc: 'Resort-style stone finishes for your poolside oasis',
-        image: 'https://static.wixstatic.com/media/c1b584_5925649289064fc6ab7a3185cf41e48c~mv2.jpg/v1/fill/w_600,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_5925649289064fc6ab7a3185cf41e48c~mv2.jpg',
+        image: '/images/proj-acs0019.jpg',
     },
     {
         title: 'Patios & Decks',
         desc: 'Transform your outdoor living and entertaining spaces',
-        image: 'https://static.wixstatic.com/media/c1b584_96ee902053cd4ce2a83e65c2888f53fe~mv2.jpg/v1/fill/w_600,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_96ee902053cd4ce2a83e65c2888f53fe~mv2.jpg',
+        image: '/images/patio-lakefront.jpg',
     },
     {
         title: 'Driveways',
         desc: 'Durable, beautiful curb appeal that lasts 20+ years',
-        image: 'https://static.wixstatic.com/media/c1b584_dd95d1fee311433b8f166e153ec6abd7~mv2.jpg/v1/fill/w_600,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_dd95d1fee311433b8f166e153ec6abd7~mv2.jpg',
+        image: '/images/proj-img8970.jpg',
     },
     {
         title: 'Front Steps',
         desc: 'Create a welcoming first impression for every guest',
-        image: 'https://static.wixstatic.com/media/c1b584_d338d4cafa6042e59e8521f6a4ee6239~mv2.jpg/v1/fill/w_600,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_d338d4cafa6042e59e8521f6a4ee6239~mv2.jpg',
+        image: 'https://static.wixstatic.com/media/c1b584_dd95d1fee311433b8f166e153ec6abd7~mv2.jpg/v1/fill/w_600,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_dd95d1fee311433b8f166e153ec6abd7~mv2.jpg',
     },
 ];
 

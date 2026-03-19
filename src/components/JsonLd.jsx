@@ -49,8 +49,6 @@ export function buildLocalBusinessSchema(city = null) {
             { '@type': 'City', name: 'Penticton', '@id': 'https://en.wikipedia.org/wiki/Penticton' },
             { '@type': 'City', name: 'Summerland', '@id': 'https://en.wikipedia.org/wiki/Summerland,_British_Columbia' },
             { '@type': 'City', name: 'Peachland', '@id': 'https://en.wikipedia.org/wiki/Peachland' },
-            { '@type': 'City', name: 'Lake Country', '@id': 'https://en.wikipedia.org/wiki/Lake_Country,_British_Columbia' },
-            { '@type': 'City', name: 'Vernon', '@id': 'https://en.wikipedia.org/wiki/Vernon,_British_Columbia' },
         ],
     };
 

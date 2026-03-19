@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="footer__brand">
                         <img src={LOGO_URL} alt="Sierra Stone South & Central Okanagan — premium stone coating" />
                         <p>
-                            Premium natural stone aggregate coatings for pool decks, patios, driveways, and steps. Serving the Central &amp; South Okanagan since 2015.
+                            Premium natural stone aggregate coatings for pool decks, patios, driveways, and steps. Serving the South &amp; Central Okanagan since 2019.
                         </p>
                         <div className="footer__socials">
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Facebook">
@@ -55,8 +55,6 @@ export default function Footer() {
                             <Link to="/penticton">Penticton</Link>
                             <Link to="/summerland">Summerland</Link>
                             <Link to="/peachland">Peachland</Link>
-                            <Link to="/lake-country">Lake Country</Link>
-                            <Link to="/vernon">Vernon</Link>
                         </div>
                     </div>
 
