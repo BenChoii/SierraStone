@@ -7,7 +7,7 @@ import url from 'node:url';
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 
-const SITE = process.env.SITE_URL || 'https://sierra-stone.vercel.app';
+const SITE = process.env.SITE_URL || 'https://sierrastonesouthcentral.com';
 
 const { SERVICES } = await import(url.pathToFileURL(path.join(root, 'src/data/services.js')).href);
 const { CITIES }   = await import(url.pathToFileURL(path.join(root, 'src/data/cities.js')).href);

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sierra-stone.vercel.app/sitemap.xml
+Sitemap: https://sierrastonesouthcentral.com/sitemap.xml
