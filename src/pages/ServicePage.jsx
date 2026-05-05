@@ -4,6 +4,8 @@ import { CITIES } from '../data/cities';
 import { GALLERY_IMAGES } from '../utils/data';
 import PageMeta from '../components/PageMeta';
 import JsonLd, { buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../components/JsonLd';
+import LeadForm from '../components/LeadForm';
+import '../pages/Contact.css';
 import './CityServicePage.css'; // Reuses the same styles
 
 export default function ServicePage() {
@@ -31,6 +33,17 @@ export default function ServicePage() {
     const serviceGallery = service.galleryFilter
         ? GALLERY_IMAGES.filter(img => img.category === service.galleryFilter).slice(0, 4)
         : [];
+
+    // Map service slug → LeadForm select option label
+    const SERVICE_FORM_LABELS = {
+        'pool-decks': 'Pool Deck',
+        'patios-and-decks': 'Patio / Deck',
+        'driveways': 'Driveway',
+        'front-steps': 'Front Steps / Walkway',
+        'indoor-surfaces': 'Indoor Surface',
+        'concrete-repair': 'Concrete Repair',
+    };
+    const defaultFormService = SERVICE_FORM_LABELS[service.slug] || '';
 
     return (
         <>
@@ -156,6 +169,19 @@ export default function ServicePage() {
                                 <span className="city-service-card__link">Learn more →</span>
                             </Link>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Lead Form */}
+            <section className="section">
+                <div className="container">
+                    <div className="service-lead-form">
+                        <LeadForm
+                            defaultService={defaultFormService}
+                            title={`Get a Free ${service.name} Estimate`}
+                            subtitle={`Tell us about your ${service.name.toLowerCase()} project and we'll be in touch with a no-obligation quote.`}
+                        />
                     </div>
                 </div>
             </section>

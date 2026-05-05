@@ -215,6 +215,16 @@
     color: var(--text-secondary);
 }
 
+/* Embedded form on service detail pages */
+.service-lead-form {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.service-lead-form .contact-form {
+    background: var(--white);
+}
+
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;

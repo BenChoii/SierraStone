@@ -1,15 +1,7 @@
-import { useState } from 'react';
+import LeadForm from '../components/LeadForm';
 import './Contact.css';
 
 export default function Contact() {
-    const [submitted, setSubmitted] = useState(false);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // In production, this would send to a backend
-        setSubmitted(true);
-    };
-
     return (
         <>
             <section className="contact-hero">
@@ -27,62 +19,7 @@ export default function Contact() {
                 <div className="container">
                     <div className="contact-grid">
                         {/* Form */}
-                        <div className="contact-form">
-                            <h2>Request a Free Estimate</h2>
-                            <p>Fill out the form below and our team will get back to you promptly.</p>
-
-                            {submitted ? (
-                                <div className="form-success">
-                                    <h3>✓ Thank You!</h3>
-                                    <p>We've received your request and will be in touch soon.</p>
-                                </div>
-                            ) : (
-                                <form onSubmit={handleSubmit}>
-                                    <div className="form-row">
-                                        <div className="form-group">
-                                            <label htmlFor="firstName">First Name *</label>
-                                            <input id="firstName" type="text" required placeholder="John" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="lastName">Last Name *</label>
-                                            <input id="lastName" type="text" required placeholder="Smith" />
-                                        </div>
-                                    </div>
-                                    <div className="form-row">
-                                        <div className="form-group">
-                                            <label htmlFor="email">Email *</label>
-                                            <input id="email" type="email" required placeholder="john@example.com" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="phone">Phone</label>
-                                            <input id="phone" type="tel" placeholder="(250) 555-1234" />
-                                        </div>
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="service">Service Interested In</label>
-                                        <select id="service" defaultValue="">
-                                            <option value="" disabled>Select a service...</option>
-                                            <option>Pool Deck</option>
-                                            <option>Patio / Deck</option>
-                                            <option>Driveway</option>
-                                            <option>Front Steps / Walkway</option>
-                                            <option>Indoor Surface</option>
-                                            <option>Other</option>
-                                        </select>
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="message">Tell Us About Your Project</label>
-                                        <textarea
-                                            id="message"
-                                            placeholder="Describe the surface you'd like to cover, approximate size, and any other details..."
-                                        />
-                                    </div>
-                                    <button type="submit" className="btn btn--primary form-submit">
-                                        Send Request
-                                    </button>
-                                </form>
-                            )}
-                        </div>
+                        <LeadForm />
 
                         {/* Info */}
                         <div className="contact-info">
