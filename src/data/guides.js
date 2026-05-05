@@ -190,6 +190,158 @@ export const GUIDES = [
     },
 ];
 
+// ===== Comparison guides (added Phase 1) =====
+
+GUIDES.push(
+    {
+        slug: 'sierra-stone-vs-rubber-stone',
+        title: 'Sierra Stone vs Rubber Stone: Which Is Right for Your Surface?',
+        metaTitle: 'Sierra Stone vs Rubber Stone — Honest Comparison | Sierra Stone Okanagan',
+        metaDescription: 'Sierra Stone and Rubber Stone are sister products from the same parent company. Honest breakdown of when natural stone wins and when recycled-rubber is the better call.',
+        category: 'Comparisons',
+        readTime: '6 min read',
+        intro: `Sierra Stone and Rubber Stone are both made by CoverYourUgly, the parent company behind both product lines. They share a similar installation philosophy — coat over an existing substrate instead of demolishing — but the materials, feel, and ideal applications are genuinely different. We install Sierra Stone, but we want you to choose the right product for your space, even if that means pointing you somewhere else. This guide is the honest breakdown.`,
+        sections: [
+            {
+                heading: 'What Sierra Stone Actually Is',
+                content: `Sierra Stone is real natural stone aggregate — small, rounded river-stone particles in a range of natural colours — bonded to your substrate with industrial-grade epoxy and sealed with a UV-stable topcoat. The end result looks and feels like a hand-set pebble surface, except seamless: no joints, no grout, no weeds. Because the aggregate is genuine stone, the colour is inherent to the material rather than a surface dye, and the texture is created by the stones themselves.`
+            },
+            {
+                heading: 'What Rubber Stone Actually Is',
+                content: `Rubber Stone uses recycled-tire rubber granules — the same material you find in playground surfaces and sport courts — bonded with polyurethane. It is significantly softer underfoot than natural stone. It absorbs impact, deadens sound, and stays warm in cool weather. The visual texture is rubber granule, not pebble; some people read it as "modern speckled" rather than "natural."`
+            },
+            {
+                heading: 'When Sierra Stone Wins',
+                content: `Sierra Stone is the right call when the look matters as much as the function:\n\n• **Pool decks and patios** where a natural-stone aesthetic is part of the property value\n• **Driveways and walkways** that need to handle vehicle weight and look premium from the curb\n• **Outdoor entertaining spaces** where guests will see and remark on the surface\n• **Resort-style or luxury home aesthetics** — the natural pebble look is hard to beat for visual warmth\n• **Surfaces with heavy UV exposure** — natural stone aggregate doesn't fade because the colour is the stone itself\n\nThe industrial-grade epoxy and UV-stable topcoat are engineered for sustained outdoor exposure, and the natural-stone surface stays cooler underfoot than most darker rubber options.`
+            },
+            {
+                heading: 'When Rubber Stone Wins',
+                content: `Rubber Stone is the better choice when impact, sound, or comfort matter more than the natural-stone look:\n\n• **Indoor play areas, daycare floors, kids' rooms** — soft enough to soften a fall\n• **Around hot tubs and on raised wooden decks** where flexibility and waterproofing matter\n• **Garage gym floors and basement workout spaces** — drop a dumbbell and the floor absorbs it\n• **Dog runs and pet areas** — soft on paws, easy to hose clean\n• **Soundproofing applications** — the rubber layer dampens footfall and noise transmission\n• **Spaces where you want a softer, warmer feel** — barefoot comfort is real with rubber\n\nIf you'd rather not stand on stone for an hour while you cook on the BBQ, rubber may be a better match for your lifestyle even on outdoor surfaces.`
+            },
+            {
+                heading: 'Durability Side by Side',
+                content: `Both products are warrantied for 20+ years when properly installed. Sierra Stone holds up exceptionally well to vehicle traffic, freeze-thaw cycles, and direct UV — the natural stone aggregate is essentially unchanged after decades. Rubber Stone holds up well to impact and chemical exposure but, like all rubber-based products, can show some surface wear in high-UV exposed areas over time. For driveways and direct-sun pool decks, Sierra Stone has the edge.`
+            },
+            {
+                heading: 'Cost & Installation',
+                content: `Installation cost is comparable between the two products. Both are applied over your existing substrate (concrete, wood, vinyl), eliminating the demolition cost that haunts traditional replacement. Both are typically completed in 2-3 days for a residential project. The main cost driver is square footage and substrate condition, not which product you pick.`
+            },
+            {
+                heading: 'Mixing the Two',
+                content: `Some homeowners use both: Sierra Stone outdoors where the look and durability matter most, Rubber Stone in the indoor gym or basement where comfort wins. Because both come from the same product family, the colour palettes and design philosophies coordinate naturally — you can spec complementary colours across both materials in the same property.`
+            },
+        ],
+        verdict: `If you want a natural-stone aesthetic, sustained outdoor durability under Okanagan UV and freeze-thaw, and a surface that handles vehicle traffic — choose Sierra Stone. If you want a soft, impact-absorbing, sound-deadening surface for indoor play areas, gyms, or pet zones — Rubber Stone is the better fit. There is no "winner" between them; they solve different problems. We install Sierra Stone, and if your project is a better fit for Rubber Stone, we'll tell you so.`,
+        faq: [
+            { q: 'Are Sierra Stone and Rubber Stone made by the same company?', a: 'Yes. Both are products of CoverYourUgly, the parent company behind both lines. They share the "coat over existing substrate" installation philosophy but use different materials.' },
+            { q: 'Which is more slip-resistant when wet?', a: 'Both are excellent in wet conditions. Sierra Stone\'s natural stone texture provides inherent grip; Rubber Stone\'s rubber surface provides high friction even when wet. Sierra Stone is the more common choice for pool decks because of its drainage and aesthetic.' },
+            { q: 'Can I install Sierra Stone over an existing Rubber Stone surface?', a: 'Generally no — the substrate prep for Sierra Stone is designed for concrete, wood, or vinyl. If you have an existing Rubber Stone surface you want to replace with Sierra Stone, we would assess the substrate underneath and plan accordingly.' },
+            { q: 'Which lasts longer outdoors in the Okanagan?', a: 'Both are warrantied for 20+ years. For sustained direct UV and vehicle traffic, Sierra Stone has a slight edge. For everything else, they are roughly equivalent over the warranty period.' },
+        ],
+        relatedServices: ['pool-decks', 'patios-and-decks', 'indoor-surfaces'],
+    },
+    {
+        slug: 'sierra-stone-vs-flexstone',
+        title: 'Sierra Stone vs Flexstone: Which Deck Coating Is Right for You?',
+        metaTitle: 'Sierra Stone vs Flexstone — Waterproof Deck Coating Compared | Sierra Stone',
+        metaDescription: 'Honest comparison of Sierra Stone vs Flexstone for decks, patios, and pool surrounds. When waterproof rubberized coating wins and when natural stone is the better call.',
+        category: 'Comparisons',
+        readTime: '6 min read',
+        intro: `Flexstone is one of the better-known waterproof deck coating systems in Western Canada, and we get asked about it constantly — usually by homeowners trying to decide between Flexstone and Sierra Stone for a deck or patio project. The honest answer is that they are different products built for different problems, and choosing well saves you a lot of money and frustration. This guide is the straight comparison.`,
+        sections: [
+            {
+                heading: 'What Flexstone Actually Is',
+                content: `Flexstone is a fully waterproof, fluid-applied rubberized membrane with a textured granule surface. The "waterproof" part is the key word: a properly installed Flexstone deck will hold water on its surface and not leak through. That makes it the right product for raised wooden decks, balconies, and roof decks where there is living space underneath that absolutely cannot get wet. The membrane is engineered to flex with substrate movement and seal against water intrusion. The granule surface is what you see and walk on, but the structural job is being done by the waterproof layer beneath.`
+            },
+            {
+                heading: 'What Sierra Stone Actually Is',
+                content: `Sierra Stone is natural stone aggregate bonded with industrial-grade epoxy over a solid substrate (typically concrete). It is water-resistant — the stones drain freely, the topcoat sheds water, and the surface dries quickly — but it is not a waterproof membrane. Water passing through the aggregate layer hits the substrate beneath. On a slab on grade, that is fine: the slab handles the water and the surface is purely cosmetic and structural. On a raised deck with living space below, the lack of a sealed membrane is a problem.`
+            },
+            {
+                heading: 'When Flexstone Is the Right Choice',
+                content: `Choose Flexstone when keeping water OUT of the structure below the surface is the primary requirement:\n\n• **Raised wooden decks over a garage, basement, or covered porch** — water cannot reach the framing\n• **Roof decks and balconies** — full waterproofing with a textured walking surface\n• **Plywood substrates** — Flexstone is purpose-built for wood-frame deck construction\n• **Older wooden balconies** showing rot or leak history — Flexstone replaces the waterproofing AND the walking surface in one product\n• **Multi-unit residential balconies** — code often specifically calls for a waterproof membrane on these surfaces\n\nFor any application where water penetration would damage the structure below, Flexstone (or a comparable waterproof membrane) is the right tool.`
+            },
+            {
+                heading: 'When Sierra Stone Is the Right Choice',
+                content: `Choose Sierra Stone when the substrate is solid concrete and the goal is a beautiful, durable, low-maintenance natural-stone surface:\n\n• **Concrete pool decks** — water doesn't matter, the stone aesthetic is what you want\n• **Concrete patios at grade** — no living space underneath to protect\n• **Driveways** — Flexstone is not engineered for vehicle traffic, Sierra Stone is\n• **Concrete walkways and front steps** — natural stone outperforms rubber granule for sustained foot traffic and curb appeal\n• **Indoor concrete floors** — garages, basements, commercial spaces\n• **Resurfacing failing decorative concrete** (stamped, exposed aggregate) where the original finish has worn out but the slab is sound\n\nFor any of these applications, Sierra Stone gives you a premium natural-stone look that Flexstone simply can't replicate.`
+            },
+            {
+                heading: 'Aesthetic Difference',
+                content: `This is where the two products diverge most clearly. Flexstone's surface is fine rubber/vinyl granules in solid colours — it reads as a uniform speckled finish, similar to a high-end commercial pool deck or condo balcony. It looks clean, modern, and intentional. Sierra Stone's surface is rounded river-stone aggregate — it reads as natural pebble, with the visual depth and warmth of real stone. If a magazine-style backyard with a resort-stone look is the goal, Sierra Stone gets you there. If a clean, modern, sealed waterproof surface is what you want, Flexstone delivers.`
+            },
+            {
+                heading: 'Durability and Repair',
+                content: `Both systems have warranties measured in decades when properly installed. Flexstone's failure mode tends to be membrane breaches at edges and penetrations — repair is possible but the repaired area can sometimes be visible. Sierra Stone's failure mode is rare; minor chips can be touched up with matching aggregate and epoxy and become invisible, and the natural stone won't fade or chalk under sustained UV. For driveways and high-vehicle-traffic surfaces, Sierra Stone has a structural advantage that Flexstone is not designed to match.`
+            },
+            {
+                heading: 'Cost Comparison',
+                content: `Per square foot, Flexstone and Sierra Stone are in a similar range — both are mid-to-premium coatings. The bigger cost question is usually about the substrate. If you have a wooden deck and need waterproofing, Flexstone solves two problems (waterproofing + walking surface) in one install. If you have solid concrete, Sierra Stone gives you a more premium aesthetic for similar money.`
+            },
+        ],
+        verdict: `Flexstone is genuinely the right answer for raised wooden decks, balconies, and any surface where waterproofing matters more than aesthetics. We will tell you that directly — if you have a wooden balcony over your garage, you want Flexstone or a comparable waterproof system, not Sierra Stone. Sierra Stone is purpose-built for stone aesthetics over solid concrete: pool decks, patios, driveways, walkways, and indoor floors. Pick the product based on what the substrate is and what problem you are actually solving.`,
+        faq: [
+            { q: 'Can Sierra Stone be used on a raised wooden deck?', a: 'Generally no, not as a waterproofing solution. Sierra Stone can be applied to wood with proper prep, but it is not a waterproof membrane. If keeping water out of the structure below is critical, use Flexstone or a comparable waterproof deck coating instead.' },
+            { q: 'Can Flexstone be used on a driveway?', a: 'Flexstone is not engineered for vehicle traffic. For a driveway, Sierra Stone over the existing concrete is the right call.' },
+            { q: 'What if my deck is concrete on the ground floor?', a: 'A concrete patio at grade is a perfect Sierra Stone candidate — there is no living space underneath, so waterproofing is not the concern. You get the natural-stone aesthetic and full durability.' },
+            { q: 'Do you install Flexstone?', a: 'No. We focus on Sierra Stone installations. If your project genuinely needs waterproofing, we will refer you to a Flexstone or comparable waterproof deck coating contractor.' },
+            { q: 'Which lasts longer?', a: 'Both are warrantied for 20+ years when properly installed. The right question is which product matches your substrate and goals — not which lasts longer in the abstract.' },
+        ],
+        relatedServices: ['patios-and-decks', 'pool-decks'],
+    },
+    {
+        slug: 'sierra-stone-vs-pavers-pool-decks',
+        title: 'Sierra Stone vs Pavers for Pool Decks: The Complete Comparison',
+        metaTitle: 'Sierra Stone vs Pavers Pool Deck — Cost, Maintenance & Slip Compared | Sierra Stone',
+        metaDescription: 'Comparing Sierra Stone vs flagstone or concrete pavers for Okanagan pool decks. Cost, install time, weeds, slip resistance, heat retention, and 20-year ownership cost.',
+        category: 'Pool Decks',
+        readTime: '7 min read',
+        intro: `If you are building or renovating a pool deck in the Okanagan, the two finalist options usually come down to natural-looking pavers (flagstone or large-format concrete pavers) and stone aggregate coating like Sierra Stone. Both are beautiful when freshly installed. The differences emerge over time — in cost, in maintenance, in safety, and in how the surface ages through 20+ Okanagan summers. This guide is a head-to-head comparison.`,
+        sections: [
+            {
+                heading: 'Upfront Cost',
+                content: `Pavers vary widely depending on material. Concrete pavers run roughly $12-20 per square foot installed; flagstone runs $18-35 per square foot installed depending on the stone and the prep required for a level base. Sierra Stone over an existing concrete pool deck runs in the mid-range of that scale, but with a critical advantage: it can be applied over your existing pool deck, eliminating the demolition cost (typically $3-6 per square foot just to remove and dispose of an old deck) that paver installations require if you already have a slab in place.\n\nFor a brand-new deck where you are pouring concrete from scratch, the cost difference between the two systems is smaller. For a renovation of an existing deck, Sierra Stone is typically thousands of dollars cheaper because there is no demo phase.`
+            },
+            {
+                heading: 'Install Time and Disruption',
+                content: `Pavers are a multi-stage project. Excavate, compact a base, lay sand or screenings, set the pavers, sweep joint sand, compact, repeat as needed for level. A typical residential pool deck takes 5-10 days from start to finish, often with the pool unusable the entire time.\n\nSierra Stone over an existing concrete deck takes 2-3 days. Surface prep one day, stone application the next, topcoat and cure on day three. The pool is back in use the following weekend in most cases.`
+            },
+            {
+                heading: 'Maintenance: The Weed Question',
+                content: `This is the single biggest practical difference. Pavers have joints. Joints fill with windblown soil. Soil grows weeds. Weeds force pavers apart. You spend the rest of your life pulling weeds out of paver joints, refilling the joint sand, occasionally re-leveling shifted pavers, and watching the surface slowly deteriorate. Polymeric joint sand helps but does not eliminate the problem — and polymeric sand is itself a maintenance item, requiring replacement every 5-10 years.\n\nSierra Stone is seamless. There are no joints. There are no weeds. There is nothing to refill. The annual labour cost of "pool deck maintenance" drops to effectively zero.`
+            },
+            {
+                heading: 'Durability and Movement',
+                content: `Pavers shift. The Okanagan's freeze-thaw cycle moves soil under paver bases, and individual stones tip, sink, or rise. Most paver pool decks need a partial reset within 5-10 years and a more significant overhaul within 15-20. Tripping hazards develop slowly — by the time you notice them, you have a guest catch a toe and twist an ankle.\n\nSierra Stone's flexible epoxy matrix moves as a single sheet with the slab below. There are no individual pieces to shift. The surface stays level for the life of the substrate. No tripping hazards develop with age.`
+            },
+            {
+                heading: 'Slip Resistance',
+                content: `Wet pavers vary enormously by material. Some flagstone is excellent when wet; sealed concrete pavers can be dangerously slippery, especially when freshly sealed. Many pool deck paver installations require slip-resistant coatings to be added after the fact, which then need to be reapplied every 1-2 years.\n\nSierra Stone's natural stone aggregate creates inherent texture across the entire surface. Slip resistance is built into the material itself — wet, dry, soapy, sunscreen-covered — the texture stays consistent for the life of the surface.`
+            },
+            {
+                heading: 'Heat Retention',
+                content: `This matters more than people realize for Okanagan summers. Dark concrete pavers and most flagstone absorb and retain heat — by mid-afternoon, walking barefoot from the pool back to the lounger can be genuinely uncomfortable. Lighter-coloured Sierra Stone aggregates (Coral, Roan River, lighter blends) reflect significantly more solar energy and stay cooler underfoot. The natural stone composition itself has lower heat capacity than dense manufactured pavers. For a poolside surface kids are running across barefoot, this is a real safety and comfort difference.`
+            },
+            {
+                heading: 'Aesthetics and Design',
+                content: `Pavers offer pattern variety: running bond, herringbone, ashlar, basketweave. They suit traditional, formal, and European-influenced poolscapes well. Sierra Stone offers seamless, organic, natural-stone visuals — closer to a hand-laid pebble surface than to formal stone work. For resort-style, lakefront, or contemporary-natural designs, Sierra Stone tends to read more luxurious. For formal or traditional designs, pavers may suit the architecture better. Both are legitimate looks; pick the one that matches your home.`
+            },
+            {
+                heading: '20-Year Ownership Cost',
+                content: `Add it up over a 20-year ownership window, including upfront cost, sealing, weed control, joint sand replacement, paver re-leveling, and any failed-section replacement. Pavers consistently come out 30-50% more expensive over the lifetime than Sierra Stone, before factoring in your time. Add the labour value of the dozens of hours you spend on paver maintenance over 20 years, and the gap widens further.`
+            },
+        ],
+        verdict: `For an Okanagan pool deck, Sierra Stone offers better lifetime cost, dramatically less maintenance (no weeds, no shifting, no re-sanding joints), better slip resistance, cooler underfoot temperatures, and faster install — at a similar or lower upfront cost than pavers. Pavers are a legitimate choice for traditional or formal designs where the pattern work suits the architecture, but for most modern Okanagan poolscapes, Sierra Stone is the smarter long-term call.`,
+        faq: [
+            { q: 'Can Sierra Stone be installed over my existing flagstone or paver pool deck?', a: 'Often yes. If the existing pavers are well-set and stable, Sierra Stone can be applied over them with appropriate prep — eliminating the demolition cost. We assess each deck individually; if the pavers are too uneven or moving, we will recommend addressing the substrate first.' },
+            { q: 'Do pavers really need that much maintenance?', a: 'Yes. Weed control in joints, occasional re-leveling, joint sand replacement (every 5-10 years for polymeric sand, more often for plain sand), and surface sealing are all real ongoing tasks. Most homeowners underestimate this until they own pavers for a few years.' },
+            { q: 'What about flagstone with mortared joints?', a: 'Mortared flagstone reduces (but does not eliminate) the weed problem. Mortar joints crack in freeze-thaw, requiring repair. Mortared flagstone also tends to be the most expensive paver-style installation upfront. Sierra Stone is typically half the cost over a 20-year window.' },
+            { q: 'Which has better resale appeal?', a: 'Both are premium upgrades that improve resale value. Buyers responding to luxury / resort aesthetics tend to prefer Sierra Stone\'s seamless natural look; buyers responding to traditional or formal aesthetics may prefer pavers. The condition of the deck at the time of sale matters more than the material — and Sierra Stone holds its as-new appearance longer.' },
+            { q: 'Will Sierra Stone crack like concrete around a pool?', a: 'No. Sierra Stone\'s flexible epoxy matrix absorbs the thermal expansion and contraction that cracks rigid concrete in freeze-thaw cycles. It is one of the most freeze-thaw-resistant decorative pool deck options available.' },
+        ],
+        relatedServices: ['pool-decks'],
+    }
+);
+
 // Helpers
 export function getGuideBySlug(slug) {
     return GUIDES.find(g => g.slug === slug) || null;
