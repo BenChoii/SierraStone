@@ -1,0 +1,90 @@
+/* Sticky mobile call-CTA bar — fixed bottom on small screens only */
+
+.sticky-mobile-cta {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sticky-mobile-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 90;
+        display: flex;
+        align-items: stretch;
+        background: var(--navy);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.18);
+        padding: 0;
+        /* respect iOS home indicator */
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    .sticky-mobile-cta__call,
+    .sticky-mobile-cta__quote {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        padding: 0.85rem 0.5rem;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: background var(--duration-fast) var(--ease-out);
+    }
+
+    .sticky-mobile-cta__call {
+        color: var(--cream);
+        background: var(--navy);
+    }
+
+    .sticky-mobile-cta__call:active {
+        background: var(--navy-light);
+    }
+
+    .sticky-mobile-cta__quote {
+        background: var(--coral);
+        color: var(--white);
+    }
+
+    .sticky-mobile-cta__quote:active {
+        background: var(--coral-dark);
+    }
+
+    .sticky-mobile-cta__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--coral-light);
+    }
+
+    .sticky-mobile-cta__label {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.1;
+    }
+
+    .sticky-mobile-cta__small {
+        font-size: 0.7rem;
+        font-weight: 500;
+        opacity: 0.75;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .sticky-mobile-cta__big {
+        font-size: 0.95rem;
+        font-weight: 700;
+    }
+
+    /* Push page content above the bar so footer / form CTAs stay visible.
+       Bar height ~58px + safe-area inset. */
+    body {
+        padding-bottom: calc(58px + env(safe-area-inset-bottom, 0px));
+    }
+}
