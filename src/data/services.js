@@ -167,6 +167,43 @@ export const SERVICES = [
         metaTitleTemplate: '{service} in {city} — Garages, Basements & More | Sierra Stone',
         metaDescTemplate: 'Sierra Stone indoor coating in {city}. Premium stone aggregate finish for garage floors, basements, and commercial spaces. Durable & easy to clean. Free estimates.',
     },
+    {
+        slug: 'concrete-repair',
+        name: 'Concrete Repair & Resurfacing',
+        shortName: 'Concrete Repair',
+        heroTitle: 'Concrete Repair & Resurfacing',
+        heroSubtitle: 'Restore cracked, spalled, or stained concrete without the cost and disruption of replacement — typically at half the price of demo and re-pour.',
+        intro: `Most "concrete repair" jobs aren't really structural — they're cosmetic. Surface cracks, spalling, pitting, oil stains, salt damage, and faded colour all make concrete look beyond saving, but the slab itself is usually still sound. Instead of demolishing and re-pouring, Sierra Stone resurfaces over your existing concrete with a seamless natural-stone aggregate finish that hides the damage permanently — and looks dramatically better than the original ever did. We address surface and cosmetic concrete repair across the Okanagan; for structural settling or major slab failures, we'll be straight with you and recommend a traditional concrete contractor instead.`,
+        warningSignsTitle: 'Signs Your Concrete Can Be Restored Instead of Replaced',
+        warningSigns: [
+            'Surface cracks (hairline to 1/4")',
+            'Spalling, flaking, or pitted surface',
+            'Oil, rust, or permanent stains',
+            'Salt damage along driveway edges',
+            'Faded or discoloured concrete',
+            'Worn or chipped stamped concrete patterns',
+            'Failed previous patch jobs and mismatched repairs',
+            'Outdated broom-finish or exposed-aggregate look',
+        ],
+        process: [
+            { step: 'Honest Assessment', desc: 'We evaluate the concrete carefully and tell you straight whether resurfacing is the right call. If the slab is structurally compromised, we will say so and point you to a concrete contractor instead.' },
+            { step: 'Crack & Surface Repair', desc: 'Cracks are routed and filled with flexible polymer compound. Spalled and pitted areas are re-built. Stains are sealed off. The surface is power-washed and primed for adhesion.' },
+            { step: 'Stone Resurfacing', desc: 'Natural stone aggregate is broadcast into industrial-grade epoxy in carefully managed sections, completely covering the original concrete with a seamless, decorative finish.' },
+            { step: 'UV-Resistant Seal', desc: 'A clear UV-resistant topcoat locks in the colour and texture. Foot traffic is safe within hours; vehicle traffic within 48 hours.' },
+        ],
+        faq: [
+            { q: 'How is this different from traditional concrete repair?', a: 'Traditional concrete repair patches damage in place — the patch shows, the colour rarely matches, and most repairs fail again within a few years. Stone resurfacing covers the entire surface seamlessly, hiding all damage permanently and finishing better than the original concrete ever looked.' },
+            { q: 'When should I repair vs. replace concrete?', a: 'Replace when the slab has failed structurally — major settling, heaving, deep through-cracks with elevation differences, or rebar exposure. Repair / resurface when the damage is cosmetic — surface cracks, spalling, stains, fading. Roughly 80% of "I need new concrete" calls turn out to be the second case.' },
+            { q: 'How much does concrete resurfacing cost vs. replacement?', a: 'Stone resurfacing is typically half the cost of demolishing and pouring new concrete, and there is no week-long disruption while concrete cures. We provide free in-home estimates with transparent pricing — no obligation.' },
+            { q: 'Will the cracks come back through the new surface?', a: 'Hairline and surface cracks are handled by the flexible polymer fill and the elastomeric properties of the topcoat. Active structural cracks (where the slab is still moving) will eventually telegraph through any surface treatment — which is why we assess honestly before quoting.' },
+            { q: 'Can you fix a really ugly concrete driveway, patio, or pool deck?', a: 'Yes — that is most of what we do. Decades-old, stained, cracked, faded concrete becomes a brand-new natural-stone surface in two to three days. See our gallery for before-and-afters.' },
+            { q: 'Do you do structural concrete repair?', a: 'No. We focus on surface and cosmetic concrete restoration — resurfacing, stone coating, and decorative finishes. For slab leveling, foundation work, or structural crack injection, we recommend a dedicated structural concrete contractor.' },
+        ],
+        galleryFilter: 'driveways',
+        icon: 'driveway',
+        metaTitleTemplate: 'Concrete Repair in {city} — Resurface, Don\'t Replace | Sierra Stone',
+        metaDescTemplate: 'Concrete repair in {city}, BC. Cover cracks, spalls, stains and worn concrete with seamless stone resurfacing — typically half the cost of replacement. Free estimates.',
+    },
 ];
 
 // Helpers

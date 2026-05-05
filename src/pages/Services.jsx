@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SERVICES } from '../data/services';
 import './Services.css';
 
 const COVERS = [
@@ -71,6 +72,29 @@ export default function Services() {
                                 loading="lazy"
                             />
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Our Services Grid */}
+            <section className="section">
+                <div className="container">
+                    <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                        <span className="section-label">Where We Apply It</span>
+                        <h2>Our Services</h2>
+                        <p style={{ margin: '0.75rem auto 0', color: 'var(--text-secondary)' }}>
+                            Six dedicated services across residential and commercial spaces — explore each
+                            for specific applications, project examples, and FAQs.
+                        </p>
+                    </div>
+                    <div className="services-grid">
+                        {SERVICES.map((s) => (
+                            <Link key={s.slug} to={`/services/${s.slug}`} className="service-link-card">
+                                <h3>{s.name}</h3>
+                                <p>{s.heroSubtitle}</p>
+                                <span className="service-link-card__cta">Learn more →</span>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </section>

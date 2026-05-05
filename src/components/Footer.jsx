@@ -44,6 +44,7 @@ export default function Footer() {
                             <Link to="/services/driveways">Driveways</Link>
                             <Link to="/services/front-steps">Front Steps &amp; Walkways</Link>
                             <Link to="/services/indoor-surfaces">Indoor Surfaces</Link>
+                            <Link to="/services/concrete-repair">Concrete Repair</Link>
                         </div>
                     </div>
 

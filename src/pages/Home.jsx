@@ -7,21 +7,31 @@ const SERVICE_CARDS = [
         title: 'Pool Decks',
         desc: 'Resort-style stone finishes for your poolside oasis',
         image: '/images/proj-acs0019.jpg',
+        slug: 'pool-decks',
     },
     {
         title: 'Patios & Decks',
         desc: 'Transform your outdoor living and entertaining spaces',
         image: '/images/patio-lakefront.jpg',
+        slug: 'patios-and-decks',
     },
     {
         title: 'Driveways',
         desc: 'Durable, beautiful curb appeal that lasts 20+ years',
         image: '/images/proj-img8970.jpg',
+        slug: 'driveways',
     },
     {
         title: 'Front Steps',
         desc: 'Create a welcoming first impression for every guest',
         image: 'https://static.wixstatic.com/media/c1b584_dd95d1fee311433b8f166e153ec6abd7~mv2.jpg/v1/fill/w_600,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_dd95d1fee311433b8f166e153ec6abd7~mv2.jpg',
+        slug: 'front-steps',
+    },
+    {
+        title: 'Concrete Repair',
+        desc: 'Restore cracked, spalled or stained concrete — half the cost of replacement',
+        image: '/images/proj-after-1.jpg',
+        slug: 'concrete-repair',
     },
 ];
 
@@ -63,7 +73,7 @@ export default function Home() {
             <section className="services-strip container">
                 <div className="services-strip__grid">
                     {SERVICE_CARDS.map((s) => (
-                        <Link to="/gallery" key={s.title} className="service-card">
+                        <Link to={s.slug ? `/services/${s.slug}` : '/gallery'} key={s.title} className="service-card">
                             <div className="service-card__image">
                                 <img src={s.image} alt={s.title} loading="lazy" />
                             </div>
