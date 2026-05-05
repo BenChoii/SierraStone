@@ -95,8 +95,27 @@ export default function ServicePage() {
                 </div>
             </section>
 
+            {/* Why Sierra Stone (when defined) */}
+            {service.whyUs && service.whyUs.length > 0 && (
+                <section className="section section--cream">
+                    <div className="container">
+                        <h2>Why Sierra Stone for {service.name}</h2>
+                        <ul className="cs-whyus">
+                            {service.whyUs.map((reason, i) => (
+                                <li className="cs-whyus__item" key={i}>
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                    <span>{reason}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+            )}
+
             {/* Warning Signs */}
-            <section className="section section--cream">
+            <section className={service.whyUs && service.whyUs.length > 0 ? 'section' : 'section section--cream'}>
                 <div className="container">
                     <h2>{service.warningSignsTitle}</h2>
                     <div className="cs-warnings">

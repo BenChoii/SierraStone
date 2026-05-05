@@ -8,7 +8,18 @@ export const SERVICES = [
         shortName: 'Pool Deck',
         heroTitle: 'Pool Deck Stone Coating',
         heroSubtitle: 'Resort-style stone finishes for your poolside oasis — slip-resistant, UV-proof, and built for Okanagan summers.',
-        intro: `Your pool deck is where memories are made — but cracked, faded, or slippery concrete can ruin the experience. Sierra Stone transforms worn pool decks into stunning, resort-quality surfaces using premium natural stone aggregate and industrial-grade epoxy. The result is a slip-resistant, UV-stable, and heat-reflective surface that stays comfortable underfoot even on the hottest Okanagan days.`,
+        intro: `Your pool deck is where memories are made — but cracked, faded, or slippery concrete can ruin the experience. Sierra Stone transforms worn pool decks into stunning, resort-quality surfaces using premium natural stone aggregate and industrial-grade epoxy. The result is a slip-resistant, UV-stable, and heat-reflective surface that stays comfortable underfoot even on the hottest Okanagan days.
+
+The system bonds directly to your existing concrete pool deck — no demolition, no week-long disruption, no rebuilding. We rout and fill any surface cracks, profile and prime the slab, then hand-broadcast natural river-stone aggregate into a fresh layer of industrial-grade epoxy. A UV-stable topcoat is applied to lock in the colour, deepen the natural stone tones, and protect the surface against chlorine, salt water, sunscreen, and the punishing Okanagan UV index. Most pool decks are walkable in 24 hours and ready for a full pool party within 48.
+
+Because the aggregate is real natural stone — not a stamped pattern, not a coloured surface dye — the colour is inherent to the material itself. It will not chalk, fade, or peel like stamped concrete or painted decks. The textured surface drains quickly, so puddles dry within minutes of swimmers stepping out, and the stones themselves create inherent slip resistance that exceeds industry standards for wet-area applications.`,
+        whyUs: [
+            'Real natural stone aggregate — not a coating, dye, or stamped pattern. The colour and texture are the stone itself, so they cannot wear off or fade.',
+            'Industrial-grade epoxy with a UV-stable topcoat formulated specifically for chlorine, salt water, and the Okanagan UV index. Engineered for sustained pool environments.',
+            'Slip-resistant texture built into the material itself — wet, dry, soapy, sunscreen-covered. No additives that wear off and need reapplication.',
+            'Light aggregate colours (Coral, Roan River) reflect heat and stay cooler underfoot than dark concrete or pavers — a real safety difference for kids running barefoot.',
+            'Bonds directly over existing pool decks without demolition. Most projects complete in 2-3 days versus 1-2 weeks for traditional resurfacing.',
+        ],
         warningSignsTitle: 'Signs Your Pool Deck Needs Resurfacing',
         warningSigns: [
             'Visible cracks, especially around the pool coping',
@@ -42,7 +53,18 @@ export const SERVICES = [
         shortName: 'Patio',
         heroTitle: 'Patio & Deck Stone Coating',
         heroSubtitle: 'Transform your outdoor entertaining space into a showpiece — durable, beautiful, and virtually maintenance-free.',
-        intro: `Your patio is the heart of your outdoor living space. Sierra Stone coats existing concrete, wood, or vinyl surfaces with a premium natural stone finish that's both stunning and durable. Perfect for BBQ areas, outdoor dining spaces, and covered verandas — Sierra Stone patios require minimal maintenance and look like they were custom-built.`,
+        intro: `Your patio is the heart of your outdoor living space. Sierra Stone coats existing concrete, wood, or vinyl surfaces with a premium natural stone finish that's both stunning and durable. Perfect for BBQ areas, outdoor dining spaces, and covered verandas — Sierra Stone patios require minimal maintenance and look like they were custom-built.
+
+Most patios in the Okanagan are either tired stamped concrete that has lost its colour, broom-finish concrete that never had any to begin with, or wooden decks that demand annual staining and sealing just to look acceptable. Sierra Stone replaces all of that with a single seamless natural-stone surface that does not need annual maintenance, does not crack with freeze-thaw, and does not fade under summer UV. The natural river-stone aggregate is bonded into industrial-grade epoxy and sealed with a UV-stable topcoat, creating a surface that has been delivering 20-25+ year service life across North America for over three decades.
+
+Because the surface is seamless, there are no joints to fill, no grout to clean, no weeds to pull, and no boards to replace. A garden hose handles routine cleaning. A clear epoxy recoat every 2-3 years restores the original sheen and extends the surface indefinitely. For homeowners who would rather spend their summer evenings entertaining on the patio than maintaining it, the math works in Sierra Stone's favour year after year.`,
+        whyUs: [
+            'Seamless surface — no joints, no grout, no weeds, no boards to replace. Hose-and-go maintenance for the life of the patio.',
+            'Real natural stone aggregate over industrial-grade epoxy. Colour is inherent to the material; it will not fade, chalk, or peel like stained concrete or painted wood.',
+            'Bonds over concrete, wood, or vinyl with proper prep — no demolition required. Most patios finish in 2-3 days.',
+            'Flexible epoxy matrix moves with seasonal expansion. No freeze-thaw cracking like rigid stamped concrete.',
+            'Simple clear epoxy recoat every 2-3 years restores as-new appearance. No annual staining, sealing, or pressure washing.',
+        ],
         warningSignsTitle: 'Signs Your Patio Needs an Upgrade',
         warningSigns: [
             'Cracked, stained, or discoloured concrete',
@@ -75,7 +97,18 @@ export const SERVICES = [
         shortName: 'Driveway',
         heroTitle: 'Driveway Stone Coating',
         heroSubtitle: 'First impressions start at the curb — give your driveway the premium upgrade it deserves.',
-        intro: `Your driveway is one of the most visible parts of your property, and a cracked or stained surface makes the wrong first impression. Sierra Stone transforms tired driveways into stunning stone-finished entrances that boost curb appeal and property value. Our coating handles vehicle traffic, snowplows, road salt, and Okanagan weather extremes without cracking or fading.`,
+        intro: `Your driveway is one of the most visible parts of your property, and a cracked or stained surface makes the wrong first impression. Sierra Stone transforms tired driveways into stunning stone-finished entrances that boost curb appeal and property value. Our coating handles vehicle traffic, snowplows, road salt, and Okanagan weather extremes without cracking or fading.
+
+The Okanagan is genuinely punishing on driveway surfaces. Two thousand hours of direct sunlight per year fade and chalk most coatings. The temperature swing from -25°C in January to +40°C in July creates expansion-and-contraction cycles that crack rigid materials. Road salt and de-icing chemicals attack concrete surface layers. Vehicle weight concentrates loads at tire contact points, especially at the same spots every day where you park. Most asphalt driveways need patching within 5-8 years and full replacement within 15. Most stamped concrete driveways crack along the slab control joints and lose their decorative colour layer within the same window.
+
+Sierra Stone is engineered for these exact conditions. The flexible industrial-grade epoxy moves with thermal expansion instead of fighting it. The natural stone aggregate is unaffected by salt, oil, or UV. The UV-stable topcoat protects the surface against chemical attack. The system bonds directly over your existing concrete driveway, eliminating demolition cost and the week-long disruption of a re-pour. Most projects complete in 2-3 days, with vehicle traffic safe within 48 hours.`,
+        whyUs: [
+            'Engineered for vehicle weight, road salt, and freeze-thaw cycles — the actual conditions Okanagan driveways face year-round.',
+            'Flexible epoxy matrix absorbs thermal expansion instead of cracking like rigid concrete or asphalt.',
+            'Natural stone aggregate is unaffected by oil, road salt, or UV. Stains rinse off; the colour cannot fade because it is the stone itself.',
+            'Bonds over your existing driveway — no demolition, no week-long pour-and-cure. Typically half the all-in cost of replacement.',
+            'Premium curb appeal that adds genuine resale value. Buyers respond to stone-finished driveways far more strongly than asphalt or worn concrete.',
+        ],
         warningSignsTitle: 'Signs Your Driveway Needs Resurfacing',
         warningSigns: [
             'Spreading cracks from freeze-thaw damage',
@@ -108,7 +141,18 @@ export const SERVICES = [
         shortName: 'Steps',
         heroTitle: 'Front Steps & Walkway Stone Coating',
         heroSubtitle: 'Make every entrance memorable — safe, beautiful, and built to last through every season.',
-        intro: `Front steps and walkways are the first thing visitors see and touch. Cracked, icy, or worn steps aren't just ugly — they're dangerous. Sierra Stone coats your existing stairs and paths with slip-resistant natural stone aggregate that dramatically improves safety, traction, and curb appeal. Every project is custom-finished to complement your home's architecture.`,
+        intro: `Front steps and walkways are the first thing visitors see and touch. Cracked, icy, or worn steps aren't just ugly — they're dangerous. Sierra Stone coats your existing stairs and paths with slip-resistant natural stone aggregate that dramatically improves safety, traction, and curb appeal. Every project is custom-finished to complement your home's architecture.
+
+Steps and walkways take more weather punishment per square foot than almost any other surface on a home. They face direct rain, ice, snow, salt, and freeze-thaw cycles, plus heavy concentrated foot traffic. Painted concrete steps peel within a few years. Stained or coloured concrete fades unevenly. Loose flagstone shifts and creates trip hazards. Iced-over concrete becomes a genuine liability — falls on icy front steps are one of the more common winter injuries in the Okanagan.
+
+Sierra Stone solves the safety and aesthetic problems together. The natural river-stone aggregate creates inherent texture across every square inch of the surface — so even when wet, snowy, or covered in morning frost, traction stays strong. The flexible industrial-grade epoxy matrix bonds the stone permanently to the substrate and absorbs the thermal movement that cracks rigid concrete repairs. Every step, riser, landing, and walkway is hand-finished, with extra attention paid to nosing edges where chipping and damage typically begin. The result is a stunning, slip-safe, low-maintenance entrance that holds its appearance through years of Okanagan winters.`,
+        whyUs: [
+            'Inherent slip resistance across the entire surface — wet, dry, icy, or frost-covered. Not a slip-additive that wears off; the texture is the stone itself.',
+            'Hand-finished step nosings with extra epoxy build at the edges where chipping and damage typically start. Built to outlast painted or stained concrete.',
+            'Natural stone colour will not fade or peel like painted steps, even after decades of UV exposure.',
+            'Standard de-icers (calcium chloride, magnesium chloride) are safe on Sierra Stone — no special winter products required.',
+            'Bonds over existing concrete, wood, or repaired step structures. Crumbling edges and minor structural damage are repaired as part of the prep, not a separate job.',
+        ],
         warningSignsTitle: 'Signs Your Steps Need Attention',
         warningSigns: [
             'Cracked or crumbling step edges',
@@ -141,7 +185,18 @@ export const SERVICES = [
         shortName: 'Indoor',
         heroTitle: 'Indoor Stone Coating',
         heroSubtitle: 'Basements, garages, and more — bring the beauty of natural stone inside your home.',
-        intro: `Sierra Stone isn't just for outdoors. Transform your garage floor, basement, laundry room, or commercial space with the same premium stone aggregate finish. The seamless surface is easy to clean, resists staining, and adds a polished, professional look to any interior space. It's especially popular for garage floors and finished basements in the Okanagan.`,
+        intro: `Sierra Stone isn't just for outdoors. Transform your garage floor, basement, laundry room, or commercial space with the same premium stone aggregate finish. The seamless surface is easy to clean, resists staining, and adds a polished, professional look to any interior space. It's especially popular for garage floors and finished basements in the Okanagan.
+
+Indoor concrete is usually one of three things: a stained, oil-spotted garage slab; a cold, bare basement floor that nobody wants to walk on barefoot; or a worn commercial floor showing decades of foot traffic and equipment marks. Traditional fixes — epoxy paint, vinyl tile, sealed concrete — all have failure modes. Epoxy paint chips and peels at hot tire contact points. Vinyl tile lifts at edges and traps moisture underneath. Sealed concrete is still grey concrete, just shinier. None of these solutions actually changes the character of the room.
+
+Sierra Stone changes the character of the room. The natural stone aggregate creates a finish that reads as a high-end commercial floor — the kind you'd see in a showroom, a wine cellar, or a custom home. For garages, the indoor formulation includes enhanced chemical resistance against motor oil, brake fluid, and battery acid. For basements, the system includes moisture-resistant primers that handle the slight humidity typical of below-grade Okanagan slabs. For commercial spaces, the system handles forklift traffic, equipment loads, and chemical exposure that would destroy most decorative coatings within months.`,
+        whyUs: [
+            'The same proven natural stone aggregate and industrial-grade epoxy as our outdoor system, with indoor-formulated lower-VOC products and enhanced chemical resistance for garages.',
+            'Hot-tire-resistant — unlike epoxy paint, Sierra Stone garage floors do not lift or peel where hot tires sit on the surface.',
+            'Seamless and stain-resistant. Oil, brake fluid, and chemical spills wipe clean instead of soaking into bare concrete.',
+            'Moisture-tolerant primers handle below-grade Okanagan basement slabs that defeat most consumer-grade coatings.',
+            'Adds genuine real-estate value to finished basements and garages — buyers respond to a stone-finished garage floor far more strongly than to bare concrete or painted floors.',
+        ],
         warningSignsTitle: 'Signs Your Indoor Surface Needs an Upgrade',
         warningSigns: [
             'Stained, pitted, or flaking garage floor',
