@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 import { GALLERY_IMAGES, TESTIMONIALS } from '../utils/data';
+import PageMeta from '../components/PageMeta';
+import JsonLd, { buildOrganizationSchema, buildHomeLocalBusinessSchema } from '../components/JsonLd';
+import { CITIES } from '../data/cities';
+import { SERVICES } from '../data/services';
 import './Home.css';
 
 const SERVICE_CARDS = [
@@ -40,6 +44,14 @@ export default function Home() {
 
     return (
         <>
+            <PageMeta
+                title="Sierra Stone South & Central Okanagan — Stone Coating for Pool Decks, Patios & Driveways"
+                description="Premium natural stone aggregate coatings for pool decks, patios, driveways and steps across Kelowna, West Kelowna, Penticton, Vernon and the Okanagan. 25-year durability. Free estimates — (250) 808-9425."
+                canonical="https://sierrastonesouthcentral.com/"
+            />
+            <JsonLd data={buildOrganizationSchema()} />
+            <JsonLd data={buildHomeLocalBusinessSchema(CITIES, SERVICES)} />
+
             {/* Hero */}
             <section className="hero">
                 <div className="hero__bg" />

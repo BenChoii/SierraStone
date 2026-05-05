@@ -38,6 +38,12 @@ export function buildLocalBusinessSchema(city = null) {
         url: 'https://sierrastonesouthcentral.com',
         image: 'https://static.wixstatic.com/media/c1b584_06e8da2a49e242caab61cb5f811e2e87~mv2.png',
         priceRange: '$$',
+        address: city ? undefined : {
+            '@type': 'PostalAddress',
+            addressLocality: 'Kelowna',
+            addressRegion: 'BC',
+            addressCountry: 'CA',
+        },
         knowsAbout: [
             'Stone coating', 'Pool deck resurfacing', 'Patio stone coating',
             'Driveway resurfacing', 'Front step coating', 'Stone aggregate',
@@ -49,6 +55,8 @@ export function buildLocalBusinessSchema(city = null) {
             { '@type': 'City', name: 'Penticton', '@id': 'https://en.wikipedia.org/wiki/Penticton' },
             { '@type': 'City', name: 'Summerland', '@id': 'https://en.wikipedia.org/wiki/Summerland,_British_Columbia' },
             { '@type': 'City', name: 'Peachland', '@id': 'https://en.wikipedia.org/wiki/Peachland' },
+            { '@type': 'City', name: 'Lake Country', '@id': 'https://en.wikipedia.org/wiki/Lake_Country' },
+            { '@type': 'City', name: 'Vernon', '@id': 'https://en.wikipedia.org/wiki/Vernon,_British_Columbia' },
         ],
     };
 
@@ -68,6 +76,58 @@ export function buildLocalBusinessSchema(city = null) {
         }
     }
 
+    return base;
+}
+
+/**
+ * Organization schema for site-wide identity.
+ */
+export function buildOrganizationSchema() {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        '@id': 'https://sierrastonesouthcentral.com/#organization',
+        name: 'Sierra Stone South & Central Okanagan',
+        url: 'https://sierrastonesouthcentral.com',
+        logo: 'https://static.wixstatic.com/media/c1b584_06e8da2a49e242caab61cb5f811e2e87~mv2.png',
+        telephone: '+12508089425',
+        email: 'info@sierrastonesouthcentral.com',
+        sameAs: [],
+    };
+}
+
+/**
+ * LocalBusiness with full service catalog (for Home page).
+ */
+export function buildHomeLocalBusinessSchema(cities = [], services = []) {
+    const base = buildLocalBusinessSchema();
+    if (cities && cities.length) {
+        base.areaServed = cities.map(c => ({
+            '@type': 'City',
+            name: c.name,
+            ...(c.coordinates ? {
+                geo: {
+                    '@type': 'GeoCoordinates',
+                    latitude: c.coordinates.lat,
+                    longitude: c.coordinates.lng,
+                }
+            } : {}),
+        }));
+    }
+    if (services && services.length) {
+        base.hasOfferCatalog = {
+            '@type': 'OfferCatalog',
+            name: 'Sierra Stone Services',
+            itemListElement: services.map(s => ({
+                '@type': 'Offer',
+                itemOffered: {
+                    '@type': 'Service',
+                    name: `${s.name} Stone Coating`,
+                    url: `https://sierrastonesouthcentral.com/services/${s.slug}`,
+                },
+            })),
+        };
+    }
     return base;
 }
 
