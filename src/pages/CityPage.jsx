@@ -99,6 +99,50 @@ export default function CityPage() {
                 </div>
             </section>
 
+            {/* Local Factors — climate / surface conditions specific to this city */}
+            {city.localFactors && city.localFactors.length > 0 && (
+                <section className="section">
+                    <div className="container">
+                        <h2>What {city.name} Surfaces Have to Handle</h2>
+                        <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                            Local climate and substrate conditions that matter when choosing a coating system in {city.name}.
+                        </p>
+                        <ul className="city-factors">
+                            {city.localFactors.map((factor, i) => (
+                                <li className="city-factors__item" key={i}>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="12" y1="8" x2="12" y2="12" />
+                                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                                    </svg>
+                                    <span>{factor}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+            )}
+
+            {/* Local Projects */}
+            {city.localProjects && city.localProjects.length > 0 && (
+                <section className="section section--cream">
+                    <div className="container">
+                        <h2>Recent {city.name} Projects</h2>
+                        <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                            A sample of the kinds of installations we have completed in {city.name} and surrounding neighborhoods.
+                        </p>
+                        <ul className="city-projects">
+                            {city.localProjects.map((proj, i) => (
+                                <li className="city-projects__item" key={i}>
+                                    <span className="city-projects__bullet" aria-hidden="true" />
+                                    <span>{proj}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+            )}
+
             {/* Testimonials (if available for this city) */}
             {cityTestimonials.length > 0 && (
                 <section className="section">
