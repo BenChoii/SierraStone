@@ -9,6 +9,16 @@
             "source": "/blog/:path*",
             "destination": "/guides/:path*",
             "permanent": true
+        },
+        {
+            "source": "/services/indoor-surfaces",
+            "destination": "/services/epoxy-flooring",
+            "permanent": true
+        },
+        {
+            "source": "/:city/indoor-surfaces",
+            "destination": "/:city/epoxy-flooring",
+            "permanent": true
         }
     ],
     "rewrites": [

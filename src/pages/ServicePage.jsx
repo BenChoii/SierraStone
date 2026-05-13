@@ -45,7 +45,7 @@ export default function ServicePage() {
         'patios-and-decks': 'Patio / Deck',
         'driveways': 'Driveway',
         'front-steps': 'Front Steps / Walkway',
-        'indoor-surfaces': 'Indoor Surface',
+        'epoxy-flooring': 'Indoor Surface',
         'concrete-repair': 'Concrete Repair',
     };
     const defaultFormService = SERVICE_FORM_LABELS[service.slug] || '';

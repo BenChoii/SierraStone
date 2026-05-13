@@ -220,7 +220,7 @@ Sierra Stone solves the safety and aesthetic problems together. The natural rive
         metaDescTemplate: 'Transform your {city} front steps with Sierra Stone. Slip-resistant stone aggregate coating for steps, walkways, and landings. Free estimates — (250) 808-9425.',
     },
     {
-        slug: 'indoor-surfaces',
+        slug: 'epoxy-flooring',
         name: 'Indoor Surfaces',
         shortName: 'Indoor',
         h1: 'Epoxy Flooring & Indoor Stone Coating in the Okanagan',
