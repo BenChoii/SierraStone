@@ -5,6 +5,8 @@ import { GALLERY_IMAGES } from '../utils/data';
 import PageMeta from '../components/PageMeta';
 import JsonLd, { buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema } from '../components/JsonLd';
 import LeadForm from '../components/LeadForm';
+import TldrBlock from '../components/TldrBlock';
+import '../components/TldrBlock.css';
 import '../pages/Contact.css';
 import './CityServicePage.css'; // Reuses the same styles
 
@@ -21,8 +23,11 @@ export default function ServicePage() {
         );
     }
 
-    const metaTitle = `${service.heroTitle} — Okanagan's Trusted Stone Coating | Sierra Stone`;
-    const metaDesc = `${service.heroSubtitle} Sierra Stone provides professional ${service.name.toLowerCase()} stone coating across the Okanagan. Free estimates — (250) 808-9425.`;
+    const h1 = service.h1 || service.heroTitle;
+    const metaTitle = `${h1} | Sierra Stone Southcentral`;
+    const metaDesc = service.tldr
+        ? `${service.tldr} Free estimates — (250) 808-9425.`
+        : `${service.heroSubtitle} Sierra Stone provides professional ${service.name.toLowerCase()} stone coating across the Okanagan. Free estimates — (250) 808-9425.`;
 
     const breadcrumbs = [
         { name: 'Home', url: '/' },
@@ -60,8 +65,11 @@ export default function ServicePage() {
                         <Link to="/services">Services</Link> <span>/</span>
                         <span>{service.name}</span>
                     </nav>
-                    <h1>{service.heroTitle}</h1>
-                    <p>{service.heroSubtitle}</p>
+                    <h1>{h1}</h1>
+                    {service.tldr && (
+                        <TldrBlock answer={service.tldr} points={service.keyPoints} />
+                    )}
+                    {!service.tldr && <p>{service.heroSubtitle}</p>}
                     <div className="cs-hero__actions">
                         <button
                             className="btn btn--primary"

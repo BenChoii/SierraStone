@@ -4,6 +4,8 @@ import { getServiceBySlug } from '../data/services';
 import { GALLERY_IMAGES } from '../utils/data';
 import PageMeta from '../components/PageMeta';
 import JsonLd, { buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema, buildLocalBusinessSchema } from '../components/JsonLd';
+import TldrBlock from '../components/TldrBlock';
+import '../components/TldrBlock.css';
 import './CityServicePage.css';
 
 export default function CityServicePage() {
@@ -20,11 +22,24 @@ export default function CityServicePage() {
         );
     }
 
+    const h1 = service.h1City
+        ? service.h1City.replace('{city}', city.name)
+        : `${service.heroTitle} in ${city.name}`;
+
+    // City-localized tldr — same answer, with the city named in the first sentence
+    // for snippet capture on "{service} {city}" queries.
+    const cityTldr = service.tldr
+        ? service.tldr.replace(/\bSierra Stone\b/, `Sierra Stone in ${city.name}`)
+        : null;
+
     const metaTitle = service.metaTitleTemplate
-        .replace('{service}', `${service.name} Stone Coating`)
-        .replace('{city}', city.name);
-    const metaDesc = service.metaDescTemplate
-        .replace('{city}', city.name);
+        ? service.metaTitleTemplate
+            .replace('{service}', `${service.name} Stone Coating`)
+            .replace('{city}', city.name)
+        : `${h1} | Sierra Stone Southcentral`;
+    const metaDesc = cityTldr
+        ? `${cityTldr} Free estimates — (250) 808-9425.`
+        : service.metaDescTemplate.replace('{city}', city.name);
 
     const breadcrumbs = [
         { name: 'Home', url: '/' },
@@ -53,8 +68,12 @@ export default function CityServicePage() {
                         <Link to={`/${city.slug}/`}>{city.name}</Link> <span>/</span>
                         <span>{service.name}</span>
                     </nav>
-                    <h1>{service.heroTitle} in {city.name}</h1>
-                    <p>{service.heroSubtitle}</p>
+                    <h1>{h1}</h1>
+                    {cityTldr ? (
+                        <TldrBlock answer={cityTldr} points={service.keyPoints} />
+                    ) : (
+                        <p>{service.heroSubtitle}</p>
+                    )}
                     <div className="cs-hero__actions">
                         <button
                             className="btn btn--primary"

@@ -4,6 +4,8 @@ import { SERVICES } from '../data/services';
 import { TESTIMONIALS } from '../utils/data';
 import PageMeta from '../components/PageMeta';
 import JsonLd, { buildLocalBusinessSchema, buildBreadcrumbSchema } from '../components/JsonLd';
+import TldrBlock from '../components/TldrBlock';
+import '../components/TldrBlock.css';
 import './CityPage.css';
 
 export default function CityPage() {
@@ -41,8 +43,17 @@ export default function CityPage() {
                     <nav className="breadcrumbs" aria-label="Breadcrumb">
                         <Link to="/">Home</Link> <span>/</span> <span>{city.name}</span>
                     </nav>
-                    <h1>Stone Coating Services in {city.name}</h1>
-                    <p>{city.intro}</p>
+                    <h1>Sierra Stone Coating in {city.name} — Pool Decks, Patios & Driveways</h1>
+                    <TldrBlock
+                        answer={`Sierra Stone Southcentral provides natural stone aggregate coating services across ${city.name} — pool decks, patios, driveways, front steps, indoor flooring, and concrete repair. The system bonds over existing concrete in 2-3 days and is engineered for the Okanagan's UV exposure, freeze-thaw cycles, and lakefront conditions. Free in-home estimates anywhere in ${city.name}.`}
+                        points={[
+                            `All 6 stone coating services available across ${city.name}`,
+                            'Coats over existing concrete — no demolition, 2-3 day install',
+                            'UV-stable, freeze-thaw-stable; 20-25+ year service life',
+                            'Real local team — same crew, every project',
+                            'Free in-home estimates — (250) 808-9425',
+                        ]}
+                    />
                     <div className="city-hero__actions">
                         <a href="tel:2508089425" className="btn btn--primary">
                             Call (250) 808-9425
@@ -86,7 +97,9 @@ export default function CityPage() {
                 <div className="container">
                     <h2>Why {city.name} Homeowners Choose Sierra Stone</h2>
                     <div className="city-insight">
-                        <p>{city.localInsight}</p>
+                        {(city.intro || city.localInsight || '').split('\n\n').map((para, i) => (
+                            <p key={i}>{para}</p>
+                        ))}
                         <div className="city-neighborhoods">
                             <h3>Serving All {city.name} Neighborhoods</h3>
                             <div className="city-neighborhoods__list">
