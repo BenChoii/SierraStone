@@ -2,9 +2,8 @@ import { useState } from 'react';
 
 /**
  * Lead capture form, reused on Contact and every ServicePage.
- * Submit handler matches Contact's existing behavior (no backend yet —
- * sets local submitted state). When a real endpoint is wired up, update
- * this single handler and every form on the site picks up the change.
+ * POSTs to /api/lead, which is a Vercel serverless function that
+ * delivers the lead to the business via Twilio SMS.
  *
  * Props:
  *  - defaultService: pre-fill the Service select with this service name
@@ -20,12 +19,44 @@ export default function LeadForm({
     compact = false,
 }) {
     const [submitted, setSubmitted] = useState(false);
+    const [submitting, setSubmitting] = useState(false);
+    const [error, setError] = useState(null);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // In production, this would send to a backend.
-        // Update this single function to wire all lead forms on the site.
-        setSubmitted(true);
+        if (submitting) return;
+        setError(null);
+        setSubmitting(true);
+
+        const formData = new FormData(e.currentTarget);
+        const payload = {
+            firstName: formData.get('firstName'),
+            lastName: formData.get('lastName'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            service: formData.get('service'),
+            message: formData.get('message'),
+            company: formData.get('company'), // honeypot — humans leave blank
+        };
+
+        try {
+            const res = await fetch('/api/lead', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok || !data.ok) {
+                throw new Error(data.error || `Request failed (${res.status})`);
+            }
+            setSubmitted(true);
+        } catch (err) {
+            setError(
+                "Sorry — we couldn't send your message. Please try again, or call (250) 808-9425."
+            );
+        } finally {
+            setSubmitting(false);
+        }
     };
 
     return (
@@ -40,6 +71,16 @@ export default function LeadForm({
                 </div>
             ) : (
                 <form onSubmit={handleSubmit}>
+                    {/* Honeypot: hidden from real users via inline styles. Bots
+                        that auto-fill every field will populate it and get
+                        silently dropped by /api/lead. */}
+                    <div
+                        aria-hidden="true"
+                        style={{ position: 'absolute', left: '-10000px', width: '1px', height: '1px', overflow: 'hidden' }}
+                    >
+                        <label htmlFor="lf-company">Company (leave blank)</label>
+                        <input id="lf-company" name="company" type="text" tabIndex={-1} autoComplete="off" />
+                    </div>
                     <div className="form-row">
                         <div className="form-group">
                             <label htmlFor="lf-firstName">First Name *</label>
@@ -81,8 +122,17 @@ export default function LeadForm({
                             placeholder="Describe the surface you'd like to cover, approximate size, and any other details..."
                         />
                     </div>
-                    <button type="submit" className="btn btn--primary form-submit">
-                        Send Request
+                    {error && (
+                        <div className="form-error" role="alert" style={{ color: '#b00020', marginBottom: '1rem' }}>
+                            {error}
+                        </div>
+                    )}
+                    <button
+                        type="submit"
+                        className="btn btn--primary form-submit"
+                        disabled={submitting}
+                    >
+                        {submitting ? 'Sending…' : 'Send Request'}
                     </button>
                 </form>
             )}
