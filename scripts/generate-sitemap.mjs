@@ -20,6 +20,7 @@ const add = (loc, priority, changefreq) => urls.push({ loc, priority, changefreq
 
 // Core pages
 add('/',              '1.0', 'weekly');
+add('/about',         '0.9', 'monthly');
 add('/services',      '0.9', 'monthly');
 add('/gallery',       '0.8', 'monthly');
 add('/colours',       '0.8', 'monthly');

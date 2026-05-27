@@ -6,6 +6,7 @@ const LOGO_URL = 'https://static.wixstatic.com/media/c1b584_06e8da2a49e242caab61
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
+  { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/colours', label: 'Stone Colours' },

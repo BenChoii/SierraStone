@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SERVICES } from '../data/services';
+import PageMeta from '../components/PageMeta';
+import JsonLd, { buildFAQSchema } from '../components/JsonLd';
 import './Services.css';
 
 const COVERS = [
@@ -29,6 +31,15 @@ const PRACTICAL = [
 export default function Services() {
     return (
         <>
+            <PageMeta
+                title="Sierra Stone Okanagan Services — Pool Decks, Patios, Driveways & Steps"
+                description="Sierra Stone Okanagan offers premium stone coating services across Kelowna, West Kelowna & Penticton. Pool decks, patios, driveways, front steps & indoor flooring. Free estimates — (250) 808-9425."
+                canonical="https://sierrastonesouthcentral.com/services"
+            />
+            <JsonLd data={buildFAQSchema([
+                { q: 'What services does Sierra Stone Okanagan offer?', a: 'We provide stone coating for pool decks, patios, driveways, front steps & walkways, indoor epoxy flooring, concrete repair, and deck resurfacing across Kelowna, West Kelowna, Penticton and the entire Okanagan Valley.' },
+                { q: 'Is Sierra Stone Okanagan the original Sierra Stone brand?', a: 'Yes. We are the authentic Sierra Stone brand serving the Okanagan since 2019. When searching for Sierra Stone Okanagan, we are the original installer, not a competitor.' },
+            ])} />
             <section className="services-hero">
                 <div className="container">
                     <span className="section-label">What We Do</span>

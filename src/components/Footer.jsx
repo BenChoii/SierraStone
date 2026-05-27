@@ -9,9 +9,9 @@ export default function Footer() {
             <div className="container">
                 <div className="footer__grid">
                     <div className="footer__brand">
-                        <img src={LOGO_URL} alt="Sierra Stone South & Central Okanagan — premium stone coating" />
+                        <img src={LOGO_URL} alt="Sierra Stone Okanagan — premium stone coating" />
                         <p>
-                            Premium natural stone aggregate coatings for pool decks, patios, driveways, and steps. Serving the South &amp; Central Okanagan since 2019.
+                            Sierra Stone Okanagan — The original Sierra Stone brand serving Kelowna, West Kelowna, Penticton & the Okanagan Valley with premium natural stone aggregate coating since 2019.
                         </p>
                         <div className="footer__socials">
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social-link" aria-label="Facebook">
@@ -26,8 +26,8 @@ export default function Footer() {
                     <div>
                         <h4 className="footer__heading">Quick Links</h4>
                         <div className="footer__links">
-                            <Link to="/">Home</Link>
-                            <Link to="/services">Services</Link>
+                            <Link to="/">Sierra Stone Okanagan</Link>
+                            <Link to="/services">Our Services</Link>
                             <Link to="/gallery">Gallery</Link>
                             <Link to="/colours">Stone Colours</Link>
                             <Link to="/visualizer">AI Visualizer</Link>

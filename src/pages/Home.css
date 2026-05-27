@@ -257,6 +257,41 @@
     transform: scale(1.02);
 }
 
+/* Brand Story Section */
+.brand-story-section {
+    background: var(--navy);
+    color: var(--cream);
+}
+
+.brand-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.brand-story__text .section-label {
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+}
+
+.brand-story__text h2 {
+    color: var(--cream);
+    margin-bottom: 1.25rem;
+}
+
+.brand-story__text p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.brand-story__image img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
 /* AI CTA Section */
 .ai-cta {
     position: relative;

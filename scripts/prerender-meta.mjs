@@ -24,7 +24,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = resolve(ROOT, 'dist');
 const SITE_URL = 'https://sierrastonesouthcentral.com';
-const BRAND = 'Sierra Stone Southcentral';
+const BRAND = 'Sierra Stone Okanagan';
 
 const TEMPLATE = readFileSync(resolve(DIST, 'index.html'), 'utf8');
 
@@ -90,8 +90,8 @@ const ORGANIZATION_SCHEMA = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: BRAND,
-    legalName: 'Sierra Stone Southcentral',
-    alternateName: ['Sierra Stone Okanagan', 'Sierra Stone Kelowna'],
+    legalName: 'Sierra Stone Okanagan Ltd.',
+    alternateName: ['Sierra Stone Southcentral', 'Sierra Stone South & Central Okanagan', 'Sierra Stone Kelowna'],
     url: SITE_URL,
     telephone: '+1-250-808-9425',
     areaServed: CITIES.map(c => c.name).concat(['Okanagan', 'British Columbia']),
@@ -156,13 +156,14 @@ const routes = [];
 // Homepage
 routes.push({
     path: '/',
-    title: `${BRAND} — Pool Decks, Patios & Driveways in the Okanagan`,
-    description: `${BRAND} provides natural stone aggregate coating across the Okanagan — pool decks, patios, driveways, front steps, epoxy flooring, and concrete repair. Coats over existing concrete in 2-3 days; 20-25+ year service life. Free estimates — (250) 808-9425.`,
+    title: `Sierra Stone Okanagan — Premium Stone Coating | Kelowna, West Kelowna, Penticton`,
+    description: `${BRAND} — The original Sierra Stone brand serving Kelowna, West Kelowna, Penticton & the Okanagan since 2019. Premium natural stone aggregate coating for pool decks, patios, driveways and steps. Free estimates — (250) 808-9425.`,
     jsonLd: [ORGANIZATION_SCHEMA, localBusinessSchema()],
 });
 
 // Static pages
 const staticPages = [
+    { path: '/about', title: `About | ${BRAND}`, description: `About Sierra Stone Okanagan — the authentic Sierra Stone brand serving the Okanagan Valley since 2019. Learn why we're the original installer.` },
     { path: '/services', title: `Services | ${BRAND}`, description: `All stone coating services from ${BRAND} — pool decks, patios, driveways, front steps, epoxy flooring, and concrete repair across the Okanagan.` },
     { path: '/gallery', title: `Project Gallery | ${BRAND}`, description: `Photos of completed Sierra Stone installations across Kelowna, West Kelowna, Penticton, and the South Okanagan.` },
     { path: '/colours', title: `Stone Colours & Finishes | ${BRAND}`, description: `Choose from natural stone aggregate colours for your pool deck, patio, driveway, or indoor flooring. Real samples from completed Okanagan projects.` },
@@ -190,7 +191,7 @@ for (const service of SERVICES) {
 for (const city of CITIES) {
     routes.push({
         path: `/${city.slug}`,
-        title: `Sierra Stone Coating in ${city.name} — Pool Decks, Patios & Driveways | ${BRAND}`,
+        title: `Sierra Stone Okanagan in ${city.name} — Pool Decks, Patios & Driveways`,
         description: `${BRAND} provides natural stone aggregate coating services across ${city.name}. Pool decks, patios, driveways, front steps, epoxy flooring, and concrete repair. Free in-home estimates — (250) 808-9425.`,
         jsonLd: [localBusinessSchema(city), ORGANIZATION_SCHEMA],
     });

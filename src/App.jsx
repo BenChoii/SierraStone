@@ -11,6 +11,7 @@ import Colours from './pages/Colours';
 import Visualizer from './pages/Visualizer';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import About from './pages/About';
 import CityPage from './pages/CityPage';
 import CityServicePage from './pages/CityServicePage';
 import GuidesHub from './pages/GuidesHub';
@@ -33,6 +34,7 @@ function AppLayout() {
         <Routes>
           {/* Core Pages */}
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/colours" element={<Colours />} />

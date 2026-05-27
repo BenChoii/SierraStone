@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { GALLERY_IMAGES, TESTIMONIALS } from '../utils/data';
 import PageMeta from '../components/PageMeta';
-import JsonLd, { buildOrganizationSchema, buildHomeLocalBusinessSchema } from '../components/JsonLd';
+import JsonLd, { buildOrganizationSchema, buildHomeLocalBusinessSchema, buildFAQSchema } from '../components/JsonLd';
 import { CITIES } from '../data/cities';
 import { SERVICES } from '../data/services';
 import './Home.css';
@@ -51,6 +51,12 @@ export default function Home() {
             />
             <JsonLd data={buildOrganizationSchema()} />
             <JsonLd data={buildHomeLocalBusinessSchema(CITIES, SERVICES)} />
+            <JsonLd data={buildFAQSchema([
+                { q: 'What is Sierra Stone Okanagan?', a: 'Sierra Stone South & Central Okanagan is the premier installer of premium natural stone aggregate coating in the Okanagan Valley. We serve Kelowna, West Kelowna, Penticton, and surrounding areas with durable, beautiful stone finishes for outdoor spaces.' },
+                { q: 'Where does Sierra Stone install in the Okanagan?', a: 'We serve all of Central and South Okanagan including Kelowna, West Kelowna, Penticton, Summerland, Peachland, Lake Country, and Vernon with professional stone coating services.' },
+                { q: 'How long does Sierra Stone coating last?', a: 'Sierra Stone lasts 20-25+ years with proper maintenance. A simple epoxy recoat every 2-3 years keeps it looking new indefinitely. Most homeowners see 25+ year lifespans in Okanagan conditions.' },
+                { q: 'Why choose Sierra Stone South & Central Okanagan?', a: 'We are the established Sierra Stone installer in the Okanagan since 2019, with local expertise in Okanagan-specific conditions and substrate challenges. We provide honest assessments and premium finishes.' },
+            ])} />
 
             {/* Hero */}
             <section className="hero">
@@ -58,7 +64,7 @@ export default function Home() {
                 <div className="hero__overlay" />
                 <div className="hero__content">
                     <div className="hero__badge">
-                        <span /> Serving the Central & South Okanagan
+                        <span /> Serving Kelowna, West Kelowna, Penticton & the Okanagan
                     </div>
                     <h1>
                         Transform Your Outdoor<br />
@@ -103,7 +109,7 @@ export default function Home() {
                 <div className="container">
                     <div className="why-section__grid">
                         <div className="why-section__text">
-                            <span className="section-label">Why Sierra Stone</span>
+                            <span className="section-label">Sierra Stone Okanagan</span>
                             <h2>30+ Years of Proven<br />Excellence</h2>
                             <p>
                                 A mix of natural stone aggregate and industrial-grade epoxy creates the beautiful,
@@ -155,6 +161,36 @@ export default function Home() {
                             <img
                                 src="https://static.wixstatic.com/media/c1b584_4679da6f63fc43a8b0f4122e0a9350ec~mv2.jpg/v1/fill/w_400,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/new%20pool%20shiraz%202.jpg"
                                 alt="Pool with stone"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Brand Story - Sierra Stone South & Central Okanagan */}
+            <section className="section brand-story-section">
+                <div className="container">
+                    <div className="brand-story">
+                        <div className="brand-story__text">
+                            <span className="section-label">Our Story</span>
+                            <h2>Proudly Serving the Okanagan<br />Since 2019</h2>
+                            <p>
+                                Sierra Stone South & Central Okanagan brings premium stone coating expertise
+                                across Kelowna, West Kelowna, Penticton and the entire Okanagan Valley.
+                            </p>
+                            <p>
+                                We've installed across all Okanagan neighborhoods and know the specific
+                                substrate conditions — from post-tension pool decks in Kelowna to the UV
+                                exposure patterns on West Kelowna lakefronts. Our honest assessments mean
+                                you get the right solution for your property, not a sales pitch.
+                            </p>
+                            <Link to="/contact" className="btn btn--primary">Get Free Estimate</Link>
+                        </div>
+                        <div className="brand-story__image">
+                            <img
+                                src="https://static.wixstatic.com/media/c1b584_b15376db64d548d391b4405337f98e03~mv2.jpg/v1/fill/w_700,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c1b584_b15376db64d548d391b4405337f98e03~mv2.jpg"
+                                alt="Sierra Stone installation team"
                                 loading="lazy"
                             />
                         </div>
