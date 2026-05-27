@@ -5,6 +5,7 @@ import { TESTIMONIALS } from '../utils/data';
 import PageMeta from '../components/PageMeta';
 import JsonLd, { buildLocalBusinessSchema, buildBreadcrumbSchema } from '../components/JsonLd';
 import TldrBlock from '../components/TldrBlock';
+import WeatherWidget from '../components/WeatherWidget';
 import '../components/TldrBlock.css';
 import './CityPage.css';
 
@@ -109,6 +110,7 @@ export default function CityPage() {
                             </div>
                         </div>
                     </div>
+                    <WeatherWidget city={city} />
                 </div>
             </section>
 

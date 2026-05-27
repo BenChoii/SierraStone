@@ -31,7 +31,7 @@
     margin-bottom: 1rem;
 }
 
-.city-hero p {
+.city-hero > .container > p {
     color: var(--text-light);
     max-width: 700px;
     line-height: 1.7;

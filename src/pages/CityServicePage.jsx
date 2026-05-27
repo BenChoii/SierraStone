@@ -5,6 +5,7 @@ import { GALLERY_IMAGES } from '../utils/data';
 import PageMeta from '../components/PageMeta';
 import JsonLd, { buildServiceSchema, buildFAQSchema, buildBreadcrumbSchema, buildLocalBusinessSchema } from '../components/JsonLd';
 import TldrBlock from '../components/TldrBlock';
+import WeatherWidget from '../components/WeatherWidget';
 import '../components/TldrBlock.css';
 import './CityServicePage.css';
 
@@ -104,6 +105,7 @@ export default function CityServicePage() {
                         </p>
                         <p>{service.intro}</p>
                     </div>
+                    <WeatherWidget city={city} />
                 </div>
             </section>
 

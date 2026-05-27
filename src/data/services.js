@@ -319,6 +319,110 @@ Sierra Stone changes the character of the room. The natural stone aggregate crea
         metaTitleTemplate: 'Concrete Repair in {city} — Resurface, Don\'t Replace | Sierra Stone',
         metaDescTemplate: 'Concrete repair in {city}, BC. Cover cracks, spalls, stains and worn concrete with seamless stone resurfacing — typically half the cost of replacement. Free estimates.',
     },
+    {
+        slug: 'deck-resurfacing',
+        name: 'Deck Resurfacing',
+        shortName: 'Deck Resurfacing',
+        h1: 'Deck Resurfacing & Coating in the Okanagan',
+        h1City: 'Deck Resurfacing in {city}',
+        tldr: `Sierra Stone deck resurfacing replaces torn vinyl decking, weathered wood, and cracking concrete with a permanent natural-stone overlay. Stop staining wood and patching vinyl — our seamless stone and epoxy system bonds directly to properly prepped decks, delivering a 25-year waterproof wear surface.`,
+        keyPoints: [
+            'Outlasts vinyl decking and requires no annual staining like wood',
+            'Seamless, waterproof surface when applied over our membrane system',
+            'Bonds to existing wood, concrete, or vinyl decks — 2-3 day install',
+            'UV-stable finish won\'t fade in the Okanagan sun',
+            'Free in-home estimates across the Okanagan — (250) 808-9425',
+        ],
+        heroTitle: 'Deck Resurfacing',
+        heroSubtitle: 'The permanent upgrade from torn vinyl and weathered wood decks.',
+        intro: `If your deck is structurally sound but cosmetically failing, you don't need to rebuild it. Vinyl decking tears, leaks, and peels at the seams. Wood decks demand constant sanding, staining, and sealing just to survive the Okanagan climate. Sierra Stone deck resurfacing completely eliminates these maintenance cycles with a seamless natural-stone finish.
+
+We bond industrial-grade epoxy and natural river stone directly over your existing deck surface. When applied over our waterproofing membrane on wooden or vinyl decks, it creates a fully waterproof, highly durable wear layer that handles BBQ grease, patio furniture, and heavy foot traffic without tearing or scratching. The UV-stable topcoat ensures the color stays vibrant year after year.
+
+Stop spending your weekends maintaining your deck. A Sierra Stone resurfacing project typically takes 2-3 days, transforming your outdoor space into a resort-quality entertaining area that lasts 20-25+ years with nothing more than an occasional hose-down.`,
+        whyUs: [
+            'Far more durable than vinyl decking — will not tear from patio furniture or pet claws.',
+            'Zero annual maintenance — no sanding, staining, or sealing required like wood decks.',
+            'Seamless application means no weak joints or seams where water can penetrate.',
+            'Customizable colors allow you to match your home\'s exterior perfectly.',
+            'Installs directly over your existing deck substrate, saving the cost of structural rebuilds.',
+        ],
+        warningSignsTitle: 'Signs It\'s Time to Resurface Your Deck',
+        warningSigns: [
+            'Vinyl decking is peeling, bubbling, or tearing at the seams',
+            'Wood deck boards are splintering and require constant staining',
+            'Concrete deck is cracking or spalling',
+            'Water is pooling or leaking through the deck surface',
+            'The current surface looks tired and lowers your home\'s value',
+        ],
+        process: [
+            { step: 'Assessment', desc: 'We inspect your deck to ensure the underlying structure is sound and suitable for resurfacing.' },
+            { step: 'Preparation & Waterproofing', desc: 'The surface is cleaned, and a waterproofing membrane is applied to wood or vinyl substrates to protect the structure.' },
+            { step: 'Stone Application', desc: 'Natural stone aggregate is hand-troweled into industrial-grade epoxy for a seamless, even finish.' },
+            { step: 'Topcoat Sealing', desc: 'A UV-resistant topcoat is applied to lock in color and provide a durable wear layer.' },
+        ],
+        faq: [
+            { q: 'Can Sierra Stone be applied over a wood deck?', a: 'Yes. As long as the wood structure is sound, we apply a specialized waterproofing membrane and primer before installing the stone coating, creating a durable and waterproof surface.' },
+            { q: 'How does it compare to vinyl decking?', a: 'Vinyl decking often tears and degrades under UV exposure. Sierra Stone is vastly more durable, cannot be torn by furniture, and maintains its appearance much longer without peeling at seams.' },
+            { q: 'Is it waterproof?', a: 'When applied with our membrane system over wood or living spaces, the entire assembly provides a seamless waterproof barrier.' },
+        ],
+        galleryFilter: 'decks-patios',
+        icon: 'patio',
+        metaTitleTemplate: 'Deck Resurfacing in {city} | Better Than Vinyl & Wood | Sierra Stone',
+        metaDescTemplate: 'Permanent deck resurfacing in {city}. Upgrade torn vinyl and weathered wood decks with Sierra Stone\'s durable, seamless stone coating. Free estimates.',
+    },
+    {
+        slug: 'garage-flooring',
+        name: 'Garage Flooring',
+        shortName: 'Garage Floors',
+        h1: 'Garage Flooring & Stone Epoxy Coating in the Okanagan',
+        h1City: 'Garage Flooring in {city}',
+        tldr: `Sierra Stone garage flooring is the ultimate upgrade from peeling epoxy paint and bare concrete. Our natural stone and industrial epoxy matrix is engineered to resist hot-tire pickup, motor oil, road salt, and battery acid. It creates a showroom-quality finish that lasts 25+ years.`,
+        keyPoints: [
+            '100% immune to hot-tire pickup and peeling',
+            'Chemically resistant to oil, gas, antifreeze, and road salt',
+            'Hides cracks, pitting, and stains permanently',
+            'Adds genuine resale value to your home with a premium showroom look',
+            'Free estimates across the Okanagan — (250) 808-9425',
+        ],
+        heroTitle: 'Garage Flooring',
+        heroSubtitle: 'Showroom-quality stone coatings that never peel, chip, or lift under hot tires.',
+        intro: `Your garage floor takes more abuse than any other surface in your home. From hot tires and heavy vehicles to road salt, melting snow, and chemical spills, bare concrete simply cannot hold up. Most homeowners try standard epoxy paint from the hardware store, only to watch it peel away where the tires park within six months. 
+
+Sierra Stone garage flooring is a structural finish, not a thin paint. We use a proprietary indoor-formulated epoxy combined with natural stone aggregate to create a thick, impenetrable wear layer. This system is chemically resistant to motor oil, brake fluid, and battery acid. More importantly, it is completely immune to hot-tire pickup. The flexible epoxy matrix bonds permanently to the concrete, handling the weight and thermal expansion of Okanagan seasons without cracking.
+
+Transform your garage from a dusty, stained storage area into a premium extension of your home. Whether you're building a home gym, a workshop, or just want a clean, beautiful place to park, Sierra Stone delivers a high-end commercial finish that lasts decades.`,
+        whyUs: [
+            'Zero hot-tire pickup. Our system bonds structurally to the concrete, meaning your tires will never lift the coating.',
+            'Chemical and salt resistance. Spilled oil, antifreeze, and winter road salt wipe clean without staining or eating into the floor.',
+            'Hides imperfections perfectly. The thick stone matrix covers cracks, spalls, and old stains that thin epoxy paints highlight.',
+            'Low maintenance. A quick sweep or mop keeps the floor looking like a professional showroom.',
+            'Inherent slip resistance. The textured stone provides better grip than smooth, slippery epoxy floors when wet from melting snow.',
+        ],
+        warningSignsTitle: 'Why Standard Garage Floors Fail',
+        warningSigns: [
+            'Epoxy paint peeling at the tire contact points (hot-tire pickup)',
+            'Concrete pitting and spalling from winter road salt',
+            'Permanent oil and chemical stains soaking into porous concrete',
+            'Dust constantly tracking into the house from bare concrete',
+            'Slippery surfaces when wet or snowy',
+        ],
+        process: [
+            { step: 'Floor Assessment & Prep', desc: 'We inspect for moisture, degrease oil spots, route out cracks, and mechanically prepare the concrete for maximum adhesion.' },
+            { step: 'Primer Application', desc: 'A deep-penetrating primer is applied to seal the concrete and ensure a permanent bond with the epoxy matrix.' },
+            { step: 'Stone & Epoxy Matrix', desc: 'The natural stone aggregate is blended with industrial-grade epoxy and hand-troweled for a seamless, perfectly level finish.' },
+            { step: 'Chemical-Resistant Topcoat', desc: 'A specialized clear topcoat seals the floor, providing maximum resistance against vehicle fluids and daily wear.' },
+        ],
+        faq: [
+            { q: 'Why does normal epoxy paint peel, and why doesn\'t Sierra Stone?', a: 'Standard epoxy paint is a thin film that sits on the surface and softens under the heat of car tires, causing it to stick to the tire and peel off. Sierra Stone is a thick structural matrix of stone and industrial epoxy that bonds deeply into the concrete and cannot be lifted by hot tires.' },
+            { q: 'Is it hard to clean oil spills?', a: 'No. The chemical-resistant topcoat prevents oil, gas, and fluids from penetrating the stone. Spills can simply be wiped up or mopped away without leaving a stain.' },
+            { q: 'How long does a garage floor install take?', a: 'Most garage floors are completed in 2 to 3 days. The floor is typically ready for foot traffic in 24 hours and vehicle traffic in 48-72 hours.' },
+        ],
+        galleryFilter: 'indoor',
+        icon: 'indoor',
+        metaTitleTemplate: 'Garage Flooring in {city} | No Peeling Epoxy | Sierra Stone',
+        metaDescTemplate: 'Premium garage flooring in {city}. Sierra Stone natural stone coatings resist hot tires, oil, and salt. Showroom quality that lasts 25+ years. Free estimates.',
+    },
 ];
 
 // Helpers

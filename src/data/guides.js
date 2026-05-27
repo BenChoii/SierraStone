@@ -554,6 +554,86 @@ GUIDES.push(
             { q: 'Does the price include taxes?', a: 'Quotes are presented before GST. GST applies to residential coating installations in BC. We list the GST line separately on the written quote so the total is unambiguous.' },
         ],
         relatedServices: ['pool-decks', 'patios-and-decks', 'driveways', 'front-steps', 'epoxy-flooring', 'concrete-repair'],
+    },
+    {
+        slug: 'sierra-stone-epoxy-3030-specs',
+        title: 'Sierra Stone Epoxy 3030: Technical Specifications & Advantages',
+        metaTitle: 'Sierra Stone Epoxy 3030 Specs | Why It Outlasts Standard Epoxy',
+        metaDescription: 'Discover the technical advantages of Sierra Stone Epoxy 3030. Learn why this industrial-grade epoxy formulation is used for durable stone coating and garage flooring.',
+        category: 'Technical Specifications',
+        readTime: '4 min read',
+        intro: `When researching stone coatings and garage flooring, the quality of the epoxy binder is just as critical as the aggregate itself. Sierra Stone utilizes a proprietary industrial-grade formulation often referred to in the industry as Epoxy 3030. This guide breaks down the technical specifications of this epoxy and why it provides superior longevity compared to consumer-grade paints.`,
+        sections: [
+            {
+                heading: 'What is Epoxy 3030?',
+                content: `Epoxy 3030 is an industrial-strength, two-component epoxy resin system designed specifically for bonding natural stone aggregate to concrete and wood substrates. Unlike water-based epoxy paints sold at hardware stores, this formulation is a high-solids structural matrix engineered for extreme durability and adhesion.`
+            },
+            {
+                heading: 'Elasticity and Freeze-Thaw Resistance',
+                content: `One of the most critical specs of Sierra Stone's epoxy is its elasticity. In climates like the Okanagan, temperatures fluctuate wildly. Standard rigid epoxy will crack as the concrete substrate expands and contracts. The 3030 formulation maintains a degree of flexibility, allowing it to move with the slab and absorb thermal shock without cracking or delaminating.`
+            },
+            {
+                heading: 'Hot-Tire Pickup Immunity',
+                content: `For garage applications, hot-tire pickup is the primary failure mode of cheap epoxy. When tires heat up on the highway and park on a painted garage floor, the heat softens the paint, and the tire tread literally pulls it off the concrete. Sierra Stone's epoxy cures to a highly cross-linked structural matrix that is completely immune to this effect.`
+            },
+            {
+                heading: 'UV Stability and Topcoats',
+                content: `While raw epoxy can amber (yellow) under direct sunlight, the Sierra Stone system incorporates UV-stable aliphatic urethane or polyaspartic topcoats for outdoor and sun-exposed applications. This ensures that the natural beauty of the stone aggregate is protected from the degrading effects of UV radiation.`
+            }
+        ],
+        relatedServices: ['epoxy-flooring', 'garage-flooring']
+    },
+    {
+        slug: 'sierra-stone-vs-sierra-flooring',
+        title: 'Sierra Stone vs. Sierra Flooring: Understanding the Difference',
+        metaTitle: 'Sierra Stone vs Sierra Flooring Penticton | What\'s the Difference?',
+        metaDescription: 'Looking for Sierra Flooring in Penticton or Sierra Stone in Kelowna? Learn the difference between luxury vinyl plank flooring and permanent stone-epoxy overlays.',
+        category: 'Comparisons',
+        readTime: '3 min read',
+        intro: `If you are searching for flooring or surface upgrades in the Okanagan, you might have come across both "Sierra Stone" and "Sierra Flooring." While the names are similar, they are entirely different companies offering completely different products. Here is a quick guide to help you find exactly what you need.`,
+        sections: [
+            {
+                heading: 'Who is Sierra Flooring (Penticton)?',
+                content: `Sierra Flooring is a well-established retail flooring store and contractor located in Penticton, BC. They specialize in traditional interior flooring products such as luxury vinyl plank (LVP), carpet, hardwood, laminate, and tile. If you are looking to buy carpet for your bedroom or hardwood for your living room, Sierra Flooring in Penticton is who you are looking for.`
+            },
+            {
+                heading: 'Who is Sierra Stone (South & Central Okanagan)?',
+                content: `Sierra Stone is a specialized contractor providing natural stone and industrial epoxy overlays. We do not sell carpet or vinyl plank. Instead, we resurface concrete, driveways, pool decks, patios, and garage floors with a permanent, seamless stone coating. Our system is designed for extreme durability outdoors and in high-demand indoor spaces like garages.`
+            },
+            {
+                heading: 'Which One Do You Need?',
+                content: `**Choose Sierra Flooring (Penticton) if:**\n- You want carpet, hardwood, or luxury vinyl plank installed inside your home.\n- You are looking for a retail flooring showroom.\n\n**Choose Sierra Stone if:**\n- Your concrete driveway, patio, or pool deck is cracking and you want to resurface it without demolition.\n- You want a durable, hot-tire resistant epoxy stone floor for your garage.\n- You want to upgrade a tired wooden or vinyl deck with a permanent, waterproof stone finish.`
+            }
+        ],
+        relatedServices: ['epoxy-flooring', 'garage-flooring']
+    },
+    {
+        slug: 'driveway-repair-okanagan-resurface-vs-replace',
+        title: 'Driveway Repair in the Okanagan: Resurface vs. Replace',
+        metaTitle: 'Driveway Repair Okanagan | When to Resurface vs Replace',
+        metaDescription: 'Is your driveway cracking or spalling? Learn when you need a full replacement and when you can save thousands with Sierra Stone driveway resurfacing in the Okanagan.',
+        category: 'Driveway Guides',
+        readTime: '6 min read',
+        intro: `Driveways in the Okanagan take a beating. Between the +40°C summer heat, the -25°C winter freezes, and the constant application of road salt, even well-poured concrete eventually cracks, pits, and spalls. When this happens, most homeowners assume they need to demolish and replace the entire slab. However, if the structural integrity of the concrete is still sound, resurfacing is often a superior and much more affordable option.`,
+        sections: [
+            {
+                heading: 'When to Replace Your Driveway',
+                content: `You should completely replace your driveway if the concrete has failed structurally. Signs of structural failure include:\n- **Severe Heaving or Settling:** If one side of a crack is an inch higher than the other, the sub-base has failed.\n- **Deep, Wide Cracks:** Cracks wider than half an inch that run deep through the slab indicate severe movement.\n- **Extensive Crumbling:** If the concrete turns to dust when you rub it, the mix itself has failed.`
+            },
+            {
+                heading: 'When to Resurface (Repair) Your Driveway',
+                content: `If your driveway is structurally sound but cosmetically failing, resurfacing is the best option. Signs you should resurface include:\n- **Surface Cracking:** Hairline cracks or spiderweb cracking.\n- **Spalling and Pitting:** The top layer of the concrete is flaking off due to salt damage or freeze-thaw cycles.\n- **Staining:** Permanent oil, rust, or chemical stains.\n- **Faded Stamped Concrete:** The colour and sealer have worn away, leaving a dull, unprotected surface.`
+            },
+            {
+                heading: 'The Sierra Stone Resurfacing Process',
+                content: `Sierra Stone repairs the cosmetic damage and encapsulates the entire driveway in a seamless matrix of natural stone and flexible industrial epoxy. \n\nFirst, we rout out and fill all surface cracks with a polymer compound. Then, we apply the stone and epoxy overlay directly over the old concrete. This flexible wear layer absorbs thermal expansion without cracking, shrugs off road salt, and completely hides the old, ugly concrete underneath.`
+            },
+            {
+                heading: 'Cost Comparison: Repair vs. Replace',
+                content: `Demolishing a concrete driveway, hauling away the debris, prepping the base, and pouring new concrete is a major, week-long project. It is expensive and highly disruptive.\n\nResurfacing with Sierra Stone typically costs about half as much as a full replacement and is completed in 2 to 3 days, with vehicle traffic permitted just 48 hours later. It’s the smart way to upgrade your curb appeal without paying for demolition.`
+            }
+        ],
+        relatedServices: ['driveways', 'concrete-repair']
     }
 );
 
